@@ -1,6 +1,7 @@
 "use client";
 
 import { SearchInput, SearchOutput } from "@/components/core";
+import { Profile } from "@/types";
 import { useState } from "react";
 
 export default function Home() {

@@ -1,3 +1,6 @@
+import { Profile, Member } from "./types";
+
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export function mapToProfile(rawData: any): Profile {
   const members: Record<string, Member> = {};
 

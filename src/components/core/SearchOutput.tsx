@@ -1,3 +1,5 @@
+import { Profile } from "@/types";
+
 interface SearchOutputProps {
   content: Profile[] | null;
   error: string | null;
