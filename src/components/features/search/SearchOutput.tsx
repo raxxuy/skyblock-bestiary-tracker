@@ -3,6 +3,7 @@ import { Profile } from "@/types";
 interface SearchOutputProps {
   content: Profile[] | null;
   error: string | null;
+  theme?: string | null;
 }
 
 export default function SearchOutput({ content, error }: SearchOutputProps) {

@@ -1,7 +1,7 @@
 "use client";
 
 import ImageLink from "@/components/shared/ImageLink";
-import ThemeToggler from "@/components/ThemeToggler";
+import ThemeToggler from "@/components/layout/ThemeToggler";
 import useTheme from "@/hooks/useTheme";
 
 export default function NavigationBar() {
