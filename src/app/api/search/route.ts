@@ -1,3 +1,5 @@
+import { Profile } from "@/types/profileData";
+import { User } from "@/drizzle/schema";
 import { insertUser } from "@/drizzle/mutations";
 import { getUserByUsername } from "@/drizzle/queries";
 import { mapToProfile } from "@/helpers";
@@ -5,55 +7,110 @@ import { NextRequest, NextResponse } from "next/server";
 
 const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
 
+type InsertUserResponse = {
+  success: boolean;
+  cause?: string;
+  user?: User;
+}
+
+type MojangResponse = {
+  success: boolean;
+  cause?: string;
+  uuid?: string;
+}
+
+type HypixelResponse = {
+  success: boolean;
+  cause?: string;
+  profiles?: Profile[];
+}
+
 export async function GET(request: NextRequest) {
   const username = request.nextUrl.searchParams.get("username");
 
-  if (!username) {
-    return NextResponse.json("Missing username", { status: 400 });
+  if (!username || username.trim() === "") {
+    return NextResponse.json({ success: false, cause: "Missing or invalid username" }, { status: 400 });
   }
 
-  let existing = await getUserByUsername(username.toLowerCase());
-
-  if (!existing) {
-    const response = await handleInsertUser(username.toLowerCase());
+  const normalizedUsername = username.toLowerCase();
+  
+  let existingUser: User | null = await getUserByUsername(normalizedUsername);
+  
+  if (!existingUser) {
+    const response = await handleInsertUser(normalizedUsername);
 
     if (!response.success) {
-      return NextResponse.json(response.cause, { status: 400 });
+      return NextResponse.json({ success: false, cause: response.cause }, { status: 400 });
     }
 
-    existing = response.user!;
+    existingUser = response.user!;
   }
 
-  const data = await getHypixelData(existing.uuid);
+  const hypixelData = await getHypixelData(existingUser.uuid);
 
-  if (!data.success) {
-    return NextResponse.json(data.cause, { status: 400 });
+  if (!hypixelData.success) {
+    return NextResponse.json({ success: false, cause: hypixelData.cause }, { status: 400 });
   }
 
-  return NextResponse.json(data.profiles.map(mapToProfile));
+  return NextResponse.json({ 
+    success: true, 
+    profiles: hypixelData.profiles!.map(mapToProfile) 
+  });
 }
 
-async function handleInsertUser(username: string) {
-  const response = await fetch(`https://api.ashcon.app/mojang/v2/user/${username}`);
-  const data = await response.json();
+async function handleInsertUser(username: string): Promise<InsertUserResponse> {
+  const data = await getMojangData(username);
 
-  if (!data.uuid) {
-    return { success: false, cause: "User does not exist" };
+  if (!data.success) {
+    return { success: false, cause: data.cause };
   }
 
-  const user = await insertUser(username, data.uuid);
-
+  const user = await insertUser(username, data.uuid!);
   return { success: true, user };
 }
 
-async function getHypixelData(uuid: string) {
-  const response = await fetch(`https://api.hypixel.net/v2/skyblock/profiles?uuid=${uuid}&key=${API_KEY}`);
-
+async function getMojangData(username: string): Promise<MojangResponse> {
+  const response = await fetch(`https://api.ashcon.app/mojang/v2/user/${username}`);
+  
+  if (!response.ok) {
+    if (response.status === 404) {
+      return { success: false, cause: "Minecraft user does not exist" };
+    }
+    return { success: false, cause: `Mojang API error: ${response.status}` };
+  }
+  
   const data = await response.json();
+  
+  if (!data.uuid) {
+    return { success: false, cause: "UUID not found in Mojang response" };
+  }
+  
+  return { success: true, uuid: data.uuid };
+}
 
+async function getHypixelData(uuid: string): Promise<HypixelResponse> {
+  if (!API_KEY) {
+    return { success: false, cause: "Hypixel API key not configured" };
+  }
+  
+  const response = await fetch(`https://api.hypixel.net/v2/skyblock/profiles?uuid=${uuid}&key=${API_KEY}`);
+  
+  if (!response.ok) {
+    if (response.status === 403) {
+      return { success: false, cause: "Invalid Hypixel API key" };
+    }
+    return { success: false, cause: `Hypixel API error: ${response.status}` };
+  }
+  
+  const data = await response.json();
+  
   if (!data.success) {
-    return { success: false, cause: "Failed to fetch Skyblock data" };
+    return { success: false, cause: data.cause || "Failed to fetch Skyblock data" };
   }
 
+  if (!data.profiles || data.profiles.length === 0) {
+    return { success: false, cause: "No Skyblock profiles found for this player" };
+  }
+  
   return { success: true, profiles: data.profiles };
 }

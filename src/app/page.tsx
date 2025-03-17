@@ -1,7 +1,7 @@
 "use client";
 
 import { SearchInput, SearchOutput } from "@/components/features/search";
-import { Profile } from "@/types";
+import { Profile } from "@/types/profileData";
 import { useState } from "react";
 import useTheme from "@/hooks/useTheme";
 
@@ -16,7 +16,7 @@ export default function Home() {
 
     fetch(`api/search?username=${query}`)
       .then((res) => res.json())
-      .then((data) => setContent(data))
+      .then((data) => setContent(data.profiles))
       .catch((err) => setError(err.message));
   };
 
