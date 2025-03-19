@@ -1,20 +1,20 @@
-import { processBestiaryData } from "@/helpers";
-import { Profile } from "@/types/profileData";
+import { Profile, SearchContent } from "@/types/profileData";
 import { useEffect, useState } from "react";
 import { Loader2 } from "lucide-react";
+import ProfileOutput from "./ProfileOutput";
 
 interface SearchOutputProps {
-  content: Profile[] | null;
+  content: SearchContent | null;
   error: string | null;
   isLoading: boolean;
   theme?: string | null;
 }
 
 export default function SearchOutput({ content, error, isLoading }: SearchOutputProps) {
-  const [mobNameToSum, setMobNameToSum] = useState<Record<string, number>>({});
+  const [selectedProfile, setSelectedProfile] = useState<Profile | null>(null);
 
   useEffect(() => {
-    setMobNameToSum(processBestiaryData(content));
+    setSelectedProfile(null);
   }, [content]);
 
   if (isLoading) {
@@ -47,20 +47,39 @@ export default function SearchOutput({ content, error, isLoading }: SearchOutput
   }
 
   return (
-    <div className="w-full space-y-4">
+    <div className="w-full h-full flex flex-col space-y-4">
       <div className="p-4 bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-md">
-        <h2 className="text-lg font-medium mb-2">Profile Data</h2>
-        <pre className="overflow-auto max-h-[400px] p-2 bg-zinc-50 dark:bg-zinc-900 rounded">
-          {JSON.stringify(content, null, 2)}
-        </pre>
+        <h2 className="text-lg font-medium mb-4">Select a Profile</h2>
+        <div className="flex flex-wrap gap-2">
+          {content.profiles.map((profile) => (
+            <button
+              key={profile.profile_id}
+              onClick={() => setSelectedProfile(profile)}
+              className={`
+                px-4 py-2 rounded-md border
+                ${selectedProfile?.profile_id === profile.profile_id 
+                  ? 'bg-blue-100 border-blue-300 dark:bg-blue-900/30 dark:border-blue-700' 
+                  : 'bg-white border-zinc-200 hover:bg-zinc-50 dark:bg-zinc-800 dark:border-zinc-700 dark:hover:bg-zinc-700'}
+              `}
+            >
+              <span className="font-medium">{profile.cute_name}</span>
+              {profile.selected && (
+                <span className="ml-2 text-xs bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400 px-2 py-0.5 rounded-full">
+                  Active
+                </span>
+              )}
+            </button>
+          ))}
+        </div>
       </div>
       
-      <div className="p-4 bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-md">
-        <h2 className="text-lg font-medium mb-2">Bestiary Summary</h2>
-        <pre className="overflow-auto max-h-[400px] p-2 bg-zinc-50 dark:bg-zinc-900 rounded">
-          {JSON.stringify(mobNameToSum, null, 2)}
-        </pre>
-      </div>
+      {selectedProfile ? (
+        <ProfileOutput profile={selectedProfile} uuid={content.uuid} />
+      ) : (
+        <div className="p-4 bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-md">
+          <p className="text-zinc-600 dark:text-zinc-400">Select a profile to view details</p>
+        </div>
+      )}
     </div>
   );
 }

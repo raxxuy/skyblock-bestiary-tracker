@@ -22,6 +22,7 @@ type MojangResponse = {
 type HypixelResponse = {
   success: boolean;
   cause?: string;
+  uuid?: string;
   profiles?: Profile[];
 }
 
@@ -71,6 +72,7 @@ export async function GET(request: NextRequest) {
   // Return success response with mapped profiles
   return NextResponse.json({
     success: true,
+    uuid: existingUser.uuid.replace(/-/g, ""),
     profiles: hypixelData.profiles!.map(mapToProfile)
   });
 }
