@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Profile, Member } from "@/types/profileData";
-import { MobAliases } from "@/types/mobData";
+import { MobAlias, MobAliases } from "@/types/mobData";
 import aliases from "@/data/aliases.json";
 
 /**
@@ -38,7 +38,7 @@ export function mapToProfile(rawData: any): Profile {
  * @param mobKey The raw mob key from the API
  * @returns The human-readable mob name or undefined if no match found
  */
-export function getMobName(mobKey: string): string | undefined {
+export function getMobName(mobKey: string): MobAlias | undefined {
   const _aliases = aliases as MobAliases;
 
   for (const regexString in _aliases) {
@@ -65,13 +65,10 @@ export function getMobName(mobKey: string): string | undefined {
  * @param profiles The profiles containing bestiary data
  * @returns An object mapping mob names to their kill counts
  */
-export function processBestiaryData(profiles: Profile[] | null): Record<string, number> {
-  if (!profiles || profiles.length === 0) {
-    return {};
-  }
-
+export function processBestiaryData(profile: Profile, uuid: string): Record<string, number> {
+  
   // Get the first profile's kills data
-  const kills = profiles[0]?.members && Object.values(profiles[0].members)[0]?.bestiary?.kills;
+  const kills = profile.members[uuid]?.bestiary?.kills;
 
   if (!kills) {
     return {};
@@ -82,7 +79,7 @@ export function processBestiaryData(profiles: Profile[] | null): Record<string, 
   Object.entries(kills).forEach(([mobKey, killCount]) => {
     const mobName = getMobName(mobKey);
     if (mobName) {
-      mobNameToSum[mobName] = (mobNameToSum[mobName] || 0) + killCount;
+      mobNameToSum[mobName.name] = (mobNameToSum[mobName.name] || 0) + killCount;
     } else {
       // For unknown mobs, use the original key
       mobNameToSum[mobKey] = (mobNameToSum[mobKey] || 0) + killCount;

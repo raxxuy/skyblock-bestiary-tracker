@@ -1,4 +1,5 @@
-import { Profile, SearchContent } from "@/types/profileData";
+import { Profile } from "@/types/profileData";
+import { SearchContent } from "@/types/api";
 import { useEffect, useState } from "react";
 import { Loader2 } from "lucide-react";
 import ProfileOutput from "./ProfileOutput";

@@ -1,4 +1,4 @@
-import { Profile } from "@/types/profileData";
+import { InsertUserResponse, MojangResponse, HypixelResponse } from "@/types/api";
 import { User } from "@/drizzle/schema";
 import { insertUser } from "@/drizzle/mutations";
 import { getUserByUsername } from "@/drizzle/queries";
@@ -6,25 +6,6 @@ import { mapToProfile } from "@/helpers";
 import { NextRequest, NextResponse } from "next/server";
 
 const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
-
-type InsertUserResponse = {
-  success: boolean;
-  cause?: string;
-  user?: User;
-}
-
-type MojangResponse = {
-  success: boolean;
-  cause?: string;
-  uuid?: string;
-}
-
-type HypixelResponse = {
-  success: boolean;
-  cause?: string;
-  uuid?: string;
-  profiles?: Profile[];
-}
 
 /**
  * API route handler for searching Minecraft usernames

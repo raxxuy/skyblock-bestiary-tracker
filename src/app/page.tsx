@@ -1,7 +1,7 @@
 "use client";
 
 import { SearchInput, SearchOutput } from "@/components/features/search";
-import { SearchContent } from "@/types/profileData";
+import { SearchContent } from "@/types/api";
 import { useState, useCallback, useEffect } from "react";
 import useTheme from "@/hooks/useTheme";
 

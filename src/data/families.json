@@ -1,0 +1,350 @@
+{
+  "Private Island": {
+    "name": "Private Island",
+    "subcategory": false,
+    "mobs": {
+      "Bat": {
+        "name": "Bat",
+        "bracket": 1,
+        "tier": 5,
+        "kills": 200
+      },
+      "Creeper": {
+        "name": "Creeper",
+        "bracket": 1,
+        "tier": 5,
+        "kills": 200
+      },
+      "Enderman": {
+        "name": "Enderman",
+        "bracket": 1,
+        "tier": 5,
+        "kills": 200
+      },
+      "Skeleton": {
+        "name": "Skeleton",
+        "bracket": 1,
+        "tier": 5,
+        "kills": 200
+      },
+      "Slime": {
+        "name": "Slime",
+        "bracket": 1,
+        "tier": 5,
+        "kills": 200
+      },
+      "Spider": {
+        "name": "Spider",
+        "bracket": 1,
+        "tier": 5,
+        "kills": 200
+      },
+      "Witch": {
+        "name": "Witch",
+        "bracket": 1,
+        "tier": 5,
+        "kills": 200
+      },
+      "Zombie": {
+        "name": "Zombie",
+        "bracket": 1,
+        "tier": 5,
+        "kills": 200
+      }
+    }
+  },
+  "Hub": {
+    "name": "Hub",
+    "subcategory": false,
+    "mobs": {
+      "Crypt Ghoul": {
+        "name": "Crypt Ghoul",
+        "bracket": 1,
+        "tier": 15,
+        "kills": 40000
+      },
+      "Golden Ghoul": {
+        "name": "Golden Ghoul",
+        "bracket": 3,
+        "tier": 15,
+        "kills": 4000
+      },
+      "Graveyard Zombie": {
+        "name": "Graveyard Zombie",
+        "bracket": 1,
+        "tier": 5,
+        "kills": 200
+      },
+      "Old Wolf": {
+        "name": "Old Wolf",
+        "bracket": 3,
+        "tier": 15,
+        "kills": 4000
+      },
+      "Wolf": {
+        "name": "Wolf",
+        "bracket": 1,
+        "tier": 15,
+        "kills": 40000
+      },
+      "Zombie Villager": {
+        "name": "Zombie Villager",
+        "bracket": 4,
+        "tier": 15,
+        "kills": 1000
+      }
+    }
+  },
+  "The Farming Islands": {
+    "name": "The Farming Islands",
+    "subcategory": false,
+    "mobs": {
+      "Chicken": {
+        "name": "Chicken",
+        "bracket": 1,
+        "tier": 5,
+        "kills": 200
+      },
+      "Cow": {
+        "name": "Cow",
+        "bracket": 1,
+        "tier": 5,
+        "kills": 200
+      },
+      "Mushroom Cow": {
+        "name": "Mushroom Cow",
+        "bracket": 1,
+        "tier": 5,
+        "kills": 200
+      },
+      "Pig": {
+        "name": "Pig",
+        "bracket": 1,
+        "tier": 5,
+        "kills": 200
+      },
+      "Rabbit": {
+        "name": "Rabbit",
+        "bracket": 1,
+        "tier": 5,
+        "kills": 200
+      },
+      "Sheep": {
+        "name": "Sheep",
+        "bracket": 1,
+        "tier": 5,
+        "kills": 200
+      }
+    }
+  },
+  "Garden": {
+    "name": "Garden",
+    "subcategory": false,
+    "mobs": {
+      "Beetle": {
+        "name": "Beetle",
+        "bracket": 6,
+        "tier": 15,
+        "kills": 250
+      },
+      "Cricket": {
+        "name": "Cricket",
+        "bracket": 6,
+        "tier": 15,
+        "kills": 250
+      },
+      "Field Mouse": {
+        "name": "Field Mouse",
+        "bracket": 7,
+        "tier": 15,
+        "kills": 100
+      },
+      "Earthworm": {
+        "name": "Earthworm",
+        "bracket": 6,
+        "tier": 15,
+        "kills": 250
+      },
+      "Fly": {
+        "name": "Fly",
+        "bracket": 6,
+        "tier": 15,
+        "kills": 250
+      },
+      "Locust": {
+        "name": "Locust",
+        "bracket": 6,
+        "tier": 15,
+        "kills": 250
+      },
+      "Mite": {
+        "name": "Mite",
+        "bracket": 6,
+        "tier": 15,
+        "kills": 250
+      },
+      "Mosquito": {
+        "name": "Mosquito",
+        "bracket": 6,
+        "tier": 15,
+        "kills": 250
+      },
+      "Moth": {
+        "name": "Moth",
+        "bracket": 6,
+        "tier": 15,
+        "kills": 250
+      },
+      "Rat": {
+        "name": "Rat",
+        "bracket": 6,
+        "tier": 15,
+        "kills": 250
+      },
+      "Slug": {
+        "name": "Slug",
+        "bracket": 6,
+        "tier": 15,
+        "kills": 250
+      }
+    }
+  },
+  "Spider's Den": {
+    "name": "Spider's Den",
+    "subcategory": false,
+    "mobs": {
+      "Arachne": {
+        "name": "Arachne",
+        "bracket": 7,
+        "tier": 20,
+        "kills": 500
+      },
+      "Arachne's Brood": {
+        "name": "Arachne's Brood",
+        "bracket": 4,
+        "tier": 15,
+        "kills": 1000
+      },
+      "Arachne's Keeper": {
+        "name": "Arachne's Keeper",
+        "bracket": 5,
+        "tier": 15,
+        "kills": 400
+      },
+      "Broodmother": {
+        "name": "Broodmother",
+        "bracket": 5,
+        "tier": 15,
+        "kills": 400
+      },
+      "Dasher Spider": {
+        "name": "Dasher Spider",
+        "bracket": 2,
+        "tier": 15,
+        "kills": 10000
+      },
+      "Gravel Skeleton": {
+        "name": "Gravel Skeleton",
+        "bracket": 3,
+        "tier": 15,
+        "kills": 4000
+      },
+      "Rain Slime": {
+        "name": "Rain Slime",
+        "bracket": 4,
+        "tier": 15,
+        "kills": 1000
+      },
+      "Silverfish": {
+        "name": "Silverfish",
+        "bracket": 2,
+        "tier": 15,
+        "kills": 10000
+      },
+      "Spider Jockey": {
+        "name": "Spider Jockey",
+        "bracket": 3,
+        "tier": 15,
+        "kills": 4000
+      },
+      "Splitter Spider": {
+        "name": "Splitter Spider",
+        "bracket": 2,
+        "tier": 15,
+        "kills": 10000
+      },
+      "Voracious Spider": {
+        "name": "Voracious Spider",
+        "bracket": 2,
+        "tier": 15,
+        "kills": 10000
+      },
+      "Weaver Spider": {
+        "name": "Weaver Spider",
+        "bracket": 2,
+        "tier": 15,
+        "kills": 10000
+      }
+    }
+  },
+  "The End": {
+    "name": "The End",
+    "subcategory": false,
+    "mobs": {
+      "Dragon": {
+        "name": "Dragon",
+        "bracket": 5,
+        "tier": 20,
+        "kills": 1000
+      },
+      "Enderman": {
+        "name": "Enderman",
+        "bracket": 4,
+        "tier": 25,
+        "kills": 25000
+      },
+      "Endermite": {
+        "name": "Endermite",
+        "bracket": 5,
+        "tier": 25,
+        "kills": 10000
+      },
+      "Endstone Protector": {
+        "name": "Endstone Protector",
+        "bracket": 7,
+        "tier": 20,
+        "kills": 500
+      },
+      "Obsidian Defender": {
+        "name": "Obsidian Defender",
+        "bracket": 5,
+        "tier": 25,
+        "kills": 10000
+      },
+      "Voidling Extremist": {
+        "name": "Voidling Extremist",
+        "bracket": 3,
+        "tier": 15,
+        "kills": 4000
+      },
+      "Voidling Fanatic": {
+        "name": "Voidling Fanatic",
+        "bracket": 4,
+        "tier": 25,
+        "kills": 25000
+      },
+      "Watcher": {
+        "name": "Watcher",
+        "bracket": 5,
+        "tier": 25,
+        "kills": 10000
+      },
+      "Zealot": {
+        "name": "Zealot",
+        "bracket": 4,
+        "tier": 25,
+        "kills": 25000
+      }
+    }
+  }
+}

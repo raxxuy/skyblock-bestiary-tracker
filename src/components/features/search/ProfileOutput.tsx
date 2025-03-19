@@ -11,7 +11,7 @@ export default function ProfileOutput({ profile, uuid }: ProfileProps) {
   const [mobNameToSum, setMobNameToSum] = useState<Record<string, number>>({});
 
   useEffect(() => {
-    setMobNameToSum(processBestiaryData([profile]));
+    setMobNameToSum(processBestiaryData(profile, uuid));
   }, [profile]);
 
   if (!profile) {

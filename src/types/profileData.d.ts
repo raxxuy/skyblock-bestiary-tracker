@@ -12,8 +12,3 @@ export type Member = {
     kills: Record<string, number>;
   };
 }
-
-export type SearchContent = {
-  profiles: Profile[];
-  uuid: string;
-};
