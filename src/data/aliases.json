@@ -1,503 +1,503 @@
 {
   "^forest_island_bat_3$": {
     "name": "Bat",
-    "category": "Private Island"
+    "family": "Private Island"
   },
   "^creeper_1$": {
     "name": "Creeper",
-    "category": "Private Island"
+    "family": "Private Island"
   },
   "^enderman_([1-9]|1[0-5])$": {
     "name": "Enderman",
-    "category": "Private Island"
+    "family": "Private Island"
   },
   "^skeleton_([1-9]|1[0-5])$": {
     "name": "Skeleton",
-    "category": "Private Island"
+    "family": "Private Island"
   },
   "^slime_([1-9]|1[0-5])$": {
     "name": "Slime",
-    "category": "Private Island"
+    "family": "Private Island"
   },
   "^spider_([1-9]|1[0-5])$": {
     "name": "Spider",
-    "category": "Private Island"
+    "family": "Private Island"
   },
   "^witch_([1-9]|1[0-5])$": {
     "name": "Witch",
-    "category": "Private Island"
+    "family": "Private Island"
   },
   "^zombie_([1-9]|1[0-5])$": {
     "name": "Zombie",
-    "category": "Private Island"
+    "family": "Private Island"
   },
 
   "^unburried_zombie_30$": {
     "name": "Crypt Ghoul",
-    "category": "Hub"
+    "family": "Hub"
   },
   "^unburried_zombie_60$": {
     "name": "Golden Ghoul",
-    "category": "Hub"
+    "family": "Hub"
   },
   "^graveyard_zombie_1$": {
     "name": "Graveyard Zombie",
-    "category": "Hub"
+    "family": "Hub"
   },
   "^old_wolf_50$": {
     "name": "Old Wolf",
-    "category": "Hub"
+    "family": "Hub"
   },
   "^ruin_wolf_15$": {
     "name": "Wolf",
-    "category": "Hub"
+    "family": "Hub"
   },
   "^zombie_villager_1$": {
     "name": "Zombie Villager",
-    "category": "Hub"
+    "family": "Hub"
   },
 
   "^farming_chicken_1$": {
     "name": "Chicken",
-    "category": "The Farming Islands"
+    "family": "The Farming Islands"
   },
   "^farming_cow_1$": {
     "name": "Cow",
-    "category": "The Farming Islands"
+    "family": "The Farming Islands"
   },
   "^mushroom_cow_1$": {
     "name": "Mushroom Cow",
-    "category": "The Farming Islands"
+    "family": "The Farming Islands"
   },
   "^farming_pig_1$": {
     "name": "Pig",
-    "category": "The Farming Islands"
+    "family": "The Farming Islands"
   },
   "^farming_rabbit_1$": {
     "name": "Rabbit",
-    "category": "The Farming Islands"
+    "family": "The Farming Islands"
   },
   "^farming_sheep_1$": {
     "name": "Sheep",
-    "category": "The Farming Islands"
+    "family": "The Farming Islands"
   },
 
   "^pest_beetle_1$": {
     "name": "Beetle",
-    "category": "Garden"
+    "family": "Garden"
   },
   "^pest_cricket_1$": {
     "name": "Cricket",
-    "category": "Garden"
+    "family": "Garden"
   },
   "^pest_mouse_1$": {
     "name": "Field Mouse",
-    "category": "Garden"
+    "family": "Garden"
   },
   "^pest_worm_1$": {
     "name": "Earthworm",
-    "category": "Garden"
+    "family": "Garden"
   },
   "^pest_fly_1$": {
     "name": "Fly",
-    "category": "Garden"
+    "family": "Garden"
   },
   "^pest_locust_1$": {
     "name": "Locust",
-    "category": "Garden"
+    "family": "Garden"
   },
   "^pest_mite_1$": {
     "name": "Mite",
-    "category": "Garden"
+    "family": "Garden"
   },
   "^pest_mosquito_1$": {
     "name": "Mosquito",
-    "category": "Garden"
+    "family": "Garden"
   },
   "^pest_moth_1$": {
     "name": "Moth",
-    "category": "Garden"
+    "family": "Garden"
   },
   "^pest_rat_1$": {
     "name": "Rat",
-    "category": "Garden"
+    "family": "Garden"
   },
   "^pest_slug_1$": {
     "name": "Slug",
-    "category": "Garden"
+    "family": "Garden"
   },
 
   "^arachne_(300|500)$": {
     "name": "Arachne",
-    "category": "Spider's Den"
+    "family": "Spider's Den"
   },
   "^arachne_brood_(100|200)$": {
     "name": "Arachne's Brood",
-    "category": "Spider's Den"
+    "family": "Spider's Den"
   },
   "^arachne_keeper_100$": {
     "name": "Arachne's Keeper",
-    "category": "Spider's Den"
+    "family": "Spider's Den"
   },
   "^brood_mother_spider_12$": {
     "name": "Broodmother",
-    "category": "Spider's Den"
+    "family": "Spider's Den"
   },
   "^dasher_spider_(4|4[2,5]|50)$": {
     "name": "Dasher Spider",
-    "category": "Spider's Den"
+    "family": "Spider's Den"
   },
   "^respawning_skeleton_2$": {
     "name": "Gravel Skeleton",
-    "category": "Spider's Den"
+    "family": "Spider's Den"
   },
   "^rain_slime(8|20)$": {
     "name": "Rain Slime",
-    "category": "Spider's Den"
+    "family": "Spider's Den"
   },
   "^jockey_shot_silverfish_(3|42)$|^splitter_spider_silverfish_(2|4[2,5]|50)$": {
     "name": "Silverfish",
-    "category": "Spider's Den"
+    "family": "Spider's Den"
   },
   "^spider_jockey_(3|42)$": {
     "name": "Spider Jockey",
-    "category": "Spider's Den"
+    "family": "Spider's Den"
   },
   "^splitter_spider_(2|4[2,5]|50)$": {
     "name": "Splitter Spider",
-    "category": "Spider's Den"
+    "family": "Spider's Den"
   },
   "^voracious_spider_(10|4[2,5]|50)$": {
     "name": "Voracious Spider",
-    "category": "Spider's Den"
+    "family": "Spider's Den"
   },
   "^weaver_spider_(3|4[2,5]|50)$": {
     "name": "Weaver Spider",
-    "category": "Spider's Den"
+    "family": "Spider's Den"
   },
 
   "^.*_dragon_100$": {
     "name": "Dragon",
-    "category": "The End"
+    "family": "The End"
   },
   "^enderman_(4[2,5]|50)$": {
     "name": "Enderman_End",
-    "category": "The End"
+    "family": "The End"
   },
   "^endermite_(37|40)|^nest_endermite_50$": {
     "name": "Endermite",
-    "category": "The End"
+    "family": "The End"
   },
   "^corrupted_protector_100$": {
     "name": "Endstone Protector",
-    "category": "The End"
+    "family": "The End"
   },
   "^obsidian_wither_55$": {
     "name": "Obsidian Defender",
-    "category": "The End"
+    "family": "The End"
   },
   "^voidling_extremist_100$": {
     "name": "Voidling Extremist",
-    "category": "The End"
+    "family": "The End"
   },
   "^voidling_fanatic_85$": {
     "name": "Voidling Fanatic",
-    "category": "The End"
+    "family": "The End"
   },
   "^watcher_55$": {
     "name": "Watcher",
-    "category": "The End"
+    "family": "The End"
   },
   "^zealot_enderman_55|^zealot_special_enderman_55$": {
     "name": "Zealot",
-    "category": "The End"
+    "family": "The End"
   },
   "^zealot_bruiser_100$": {
     "name": "Zealot",
-    "category": "The End"
+    "family": "The End"
   },
 
   "^ashfang_red_blaze_150$": {
     "name": "Ashfang",
-    "category": "Crimson Isle"
+    "family": "Crimson Isle"
   },
   "^barbarian_duke_x_200$": {
     "name": "Barbarian Duke X",
-    "category": "Crimson Isle"
+    "family": "Crimson Isle"
   },
   "^bladesoul_200$": {
     "name": "Bladesoul",
-    "category": "Crimson Isle"
+    "family": "Crimson Isle"
   },
   "^blaze_(25|70)|^bezal_80|^mutated_blaze_70$": {
     "name": "Blaze",
-    "category": "Crimson Isle"
+    "family": "Crimson Isle"
   },
   "^flaming_spider_80$": {
     "name": "Flaming Spider",
-    "category": "Crimson Isle"
+    "family": "Crimson Isle"
   },
   "^flare_90$": {
     "name": "Flare",
-    "category": "Crimson Isle"
+    "family": "Crimson Isle"
   },
   "^ghast_85|^dive_ghast_90$": {
     "name": "Ghast",
-    "category": "Crimson Isle"
+    "family": "Crimson Isle"
   },
   "^kada_knight_90$": {
     "name": "Kada Knight",
-    "category": "Crimson Isle"
+    "family": "Crimson Isle"
   },
   "^mage_outlaw_200$": {
     "name": "Mage Outlaw",
-    "category": "Crimson Isle"
+    "family": "Crimson Isle"
   },
   "^magma_boss_500$": {
     "name": "Magma Boss",
-    "category": "Crimson Isle"
+    "family": "Crimson Isle"
   },
   "^magma_cube_75|^fireball_magma_cube_75|^pack_magma_cube_90$": {
     "name": "Magma Cube",
-    "category": "Crimson Isle"
+    "family": "Crimson Isle"
   },
   "^magma_cube_rider_90$": {
     "name": "Magma Cube Rider",
-    "category": "Crimson Isle"
+    "family": "Crimson Isle"
   },
   "^matcho_100$": {
     "name": "Matcho",
-    "category": "Crimson Isle"
+    "family": "Crimson Isle"
   },
   "^old_blaze_100$": {
     "name": "Millennia-Aged Blaze",
-    "category": "Crimson Isle"
+    "family": "Crimson Isle"
   },
   "^charging_mushroom_cow_80$": {
     "name": "Mushroom Bull",
-    "category": "Crimson Isle"
+    "family": "Crimson Isle"
   },
   "^smoldering_blaze_95$": {
     "name": "Smoldering Blaze",
-    "category": "Crimson Isle"
+    "family": "Crimson Isle"
   },
   "^hellwisp_100$": {
     "name": "Tentacle",
-    "category": "Crimson Isle"
+    "family": "Crimson Isle"
   },
   "^vanquisher_100$": {
     "name": "Vanquisher",
-    "category": "Crimson Isle"
+    "family": "Crimson Isle"
   },
   "^wither_skeleton_70$": {
     "name": "Wither Skeleton",
-    "category": "Crimson Isle"
+    "family": "Crimson Isle"
   },
   "^wither_spectre_70$": {
     "name": "Wither Spectre",
-    "category": "Crimson Isle"
+    "family": "Crimson Isle"
   },
 
   "^emerald_slime_(5|10)$": {
     "name": "Emerald Slime",
-    "category": "Deep Caverns"
+    "family": "Deep Caverns"
   },
   "^lapis_zombie_7$": {
     "name": "Lapis Zombie",
-    "category": "Deep Caverns"
+    "family": "Deep Caverns"
   },
   "^diamond_skeleton_(15|20)$": {
     "name": "Miner Skeleton",
-    "category": "Deep Caverns"
+    "family": "Deep Caverns"
   },
   "^diamond_zombie_(15|20)$": {
     "name": "Miner Zombie",
-    "category": "Deep Caverns"
+    "family": "Deep Caverns"
   },
   "^redstone_pigman_10$": {
     "name": "Redstone Pigman",
-    "category": "Deep Caverns"
+    "family": "Deep Caverns"
   },
   "^invisible_creeper_3$": {
     "name": "Sneaky Creeper",
-    "category": "Deep Caverns"
+    "family": "Deep Caverns"
   },
 
   "^goblin_500$": {
     "name": "Diamond Goblin",
-    "category": "Dwarven Mines"
+    "family": "Dwarven Mines"
   },
   "^caverns_ghost_250$": {
     "name": "Ghost",
-    "category": "Dwarven Mines"
+    "family": "Dwarven Mines"
   },
   "^glacite_bowman_165$": {
     "name": "Glacite Bowman",
-    "category": "Dwarven Mines"
+    "family": "Dwarven Mines"
   },
   "^glacite_caver_200$": {
     "name": "Glacite Caver",
-    "category": "Dwarven Mines"
+    "family": "Dwarven Mines"
   },
   "^glacite_mage_155$": {
     "name": "Glacite Mage",
-    "category": "Dwarven Mines"
+    "family": "Dwarven Mines"
   },
   "^glacite_mutt_180$": {
     "name": "Glacite Mutt",
-    "category": "Dwarven Mines"
+    "family": "Dwarven Mines"
   },
   "^ice_walker_45$": {
     "name": "Glacite Walker",
-    "category": "Dwarven Mines"
+    "family": "Dwarven Mines"
   },
   "^goblin_(weakling_melee|weakling_bow)_25$|^goblin_creepertamer_100$|^goblin_knife_thrower_25$|^goblin_flamethrower_100$|^goblin_murderlover_200$": {
     "name": "Goblin",
-    "category": "Dwarven Mines"
+    "family": "Dwarven Mines"
   },
   "^goblin_(weakling_melee|weakling_bow)_5$|^goblin_creepertamer_90$|^goblin_creeper_20$|^goblin_battler_60$|^goblin_murderlover_150$|^goblin_golem_150$": {
     "name": "Goblin Raiders",
-    "category": "Dwarven Mines"
+    "family": "Dwarven Mines"
   },
   "^goblin_50$": {
     "name": "Golden Goblin",
-    "category": "Dwarven Mines"
+    "family": "Dwarven Mines"
   },
   "^powder_ghast_1$": {
     "name": "Powder Ghast",
-    "category": "Dwarven Mines"
+    "family": "Dwarven Mines"
   },
   "^crystal_sentry_50$": {
     "name": "Star Sentry",
-    "category": "Dwarven Mines"
+    "family": "Dwarven Mines"
   },
   "^treasure_hoarder_70$": {
     "name": "Treasure Hoarder",
-    "category": "Dwarven Mines"
+    "family": "Dwarven Mines"
   },
 
   "^automaton_(100|150)$": {
     "name": "Automaton",
-    "category": "Crystal Hollows"
+    "family": "Crystal Hollows"
   },
   "^bal_boss_100$": {
     "name": "Bal",
-    "category": "Crystal Hollows"
+    "family": "Crystal Hollows"
   },
   "^butterfly_100$": {
     "name": "Butterfly",
-    "category": "Crystal Hollows"
+    "family": "Crystal Hollows"
   },
   "^team_treasurite_grunt_50$|^team_treasurite_(viper|sebastian|wendy)_100$": {
     "name": "Grunt",
-    "category": "Crystal Hollows"
+    "family": "Crystal Hollows"
   },
   "^team_treasurite_corleone_200$": {
     "name": "Boss Corleone",
-    "category": "Crystal Hollows"
+    "family": "Crystal Hollows"
   },
   "^key_guardian_100$": {
     "name": "Key Guardian",
-    "category": "Crystal Hollows"
+    "family": "Crystal Hollows"
   },
   "^sludge_(5|10|100)$": {
     "name": "Sludge",
-    "category": "Crystal Hollows"
+    "family": "Crystal Hollows"
   },
   "^thyst_20$": {
     "name": "Thyst",
-    "category": "Crystal Hollows"
+    "family": "Crystal Hollows"
   },
   "^worm_5$|^scatha_10$": {
     "name": "Worm",
-    "category": "Crystal Hollows"
+    "family": "Crystal Hollows"
   },
   "^yog_100$": {
     "name": "Yog",
-    "category": "Crystal Hollows"
+    "family": "Crystal Hollows"
   },
 
   "^howling_spirit_35$": {
     "name": "Howling Spirit",
-    "category": "The Park"
+    "family": "The Park"
   },
   "^pack_spirit_30$": {
     "name": "Pack Spirit",
-    "category": "The Park"
+    "family": "The Park"
   },
   "^soul_of_the_alpha_55$": {
     "name": "Soul of the Alpha",
-    "category": "The Park"
+    "family": "The Park"
   },
 
   "^batty_witch_60$": {
     "name": "Crazy Witch",
-    "category": "Spooky Festival"
+    "family": "Spooky Festival"
   },
   "^horseman_horse_100$": {
     "name": "Headless Horseman",
-    "category": "Spooky Festival"
+    "family": "Spooky Festival"
   },
   "^phantom_spirit_35$": {
     "name": "Phantom Spirit",
-    "category": "Spooky Festival"
+    "family": "Spooky Festival"
   },
   "^scary_jerry_30$": {
     "name": "Scary Jerry",
-    "category": "Spooky Festival"
+    "family": "Spooky Festival"
   },
   "^trick_or_treater_30$": {
     "name": "Trick or Treater",
-    "category": "Spooky Festival"
+    "family": "Spooky Festival"
   },
   "^wither_gourd_40$": {
     "name": "Wither Gourd",
-    "category": "Spooky Festival"
+    "family": "Spooky Festival"
   },
   "^wraith_50$": {
     "name": "Wraith",
-    "category": "Spooky Festival"
+    "family": "Spooky Festival"
   },
 
   "^gaia_construct_(140|260)$": {
     "name": "Gaia Construct",
-    "category": "Mythological Creatures"
+    "family": "Mythological Creatures"
   },
   "^minos_champion_(175|310)$": {
     "name": "Minos Champion",
-    "category": "Mythological Creatures"
+    "family": "Mythological Creatures"
   },
   "^minos_hunter_(15|60|125)$": {
     "name": "Minos Hunter",
-    "category": "Mythological Creatures"
+    "family": "Mythological Creatures"
   },
   "^minos_inquisitor_750$": {
     "name": "Minos Inquisitor",
-    "category": "Mythological Creatures"
+    "family": "Mythological Creatures"
   },
   "^minotaur_(45|120|210)$": {
     "name": "Minotaur",
-    "category": "Mythological Creatures"
+    "family": "Mythological Creatures"
   },
   "^siamese_lynx_(25|85|155)$": {
     "name": "Siamese Lynx",
-    "category": "Mythological Creatures"
+    "family": "Mythological Creatures"
   },
   
   "^mayor_jerry_green_1": {
     "name": "Green Jerry",
-    "category": "Jerry"
+    "family": "Jerry"
   },
   "^mayor_jerry_blue_2": {
     "name": "Blue Jerry",
-    "category": "Jerry"
+    "family": "Jerry"
   },
   "^mayor_jerry_purple_3": {
     "name": "Purple Jerry",
-    "category": "Jerry"
+    "family": "Jerry"
   },
   "^mayor_jerry_golden_5": {
     "name": "Golden Jerry",
-    "category": "Jerry"
+    "family": "Jerry"
   }
 }

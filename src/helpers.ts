@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Profile, Member } from "@/types/profileData";
-import { MobAlias, MobAliases } from "@/types/mobData";
+import { MobAlias, MobAliases, FamilyData } from "@/types/mobData";
 import aliases from "@/data/aliases.json";
 
 /**
@@ -61,30 +61,61 @@ export function getMobName(mobKey: string): MobAlias | undefined {
 }
 
 /**
- * Processes bestiary data from profiles and returns a summary of mob kills
- * @param profiles The profiles containing bestiary data
- * @returns An object mapping mob names to their kill counts
+ * Processes bestiary data from profiles and returns a summary of mob kills organized by family
+ * @param profile The profile containing bestiary data
+ * @param uuid The UUID of the player
+ * @returns An object mapping family names to their mob data
  */
-export function processBestiaryData(profile: Profile, uuid: string): Record<string, number> {
-  
-  // Get the first profile's kills data
+export function processBestiaryData(profile: Profile, uuid: string): Record<string, FamilyData> {
+  // Get the profile's kills data
   const kills = profile.members[uuid]?.bestiary?.kills;
 
   if (!kills) {
     return {};
   }
 
-  const mobNameToSum: Record<string, number> = {};
+  const familyData: Record<string, FamilyData> = {};
+  const unknownFamily = "Unknown";
 
   Object.entries(kills).forEach(([mobKey, killCount]) => {
-    const mobName = getMobName(mobKey);
-    if (mobName) {
-      mobNameToSum[mobName.name] = (mobNameToSum[mobName.name] || 0) + killCount;
-    } else {
-      // For unknown mobs, use the original key
-      mobNameToSum[mobKey] = (mobNameToSum[mobKey] || 0) + killCount;
+    const mobAlias = getMobName(mobKey);
+    const mobName = mobAlias?.name || mobKey;
+    const family = mobAlias?.family || unknownFamily;
+    
+    // Initialize family if it doesn't exist
+    if (!familyData[family]) {
+      familyData[family] = {
+        name: family,
+        category: true,
+        mobs: {}
+      };
     }
+    
+    // Add or update mob in the family
+    familyData[family].mobs[mobName] = {
+      name: mobName,
+      bracket: 0, // Default values since we don't have this data
+      tier: 0,    // Default values since we don't have this data
+      kills: (familyData[family].mobs[mobName]?.kills || 0) + killCount
+    };
   });
 
+  return familyData;
+}
+
+/**
+ * Flattens family data into a simple mob name to kill count mapping
+ * @param familyData The family data object
+ * @returns A record mapping mob names to kill counts
+ */
+export function flattenFamilyData(familyData: Record<string, FamilyData>): Record<string, number> {
+  const mobNameToSum: Record<string, number> = {};
+  
+  Object.values(familyData).forEach(family => {
+    Object.values(family.mobs).forEach(mob => {
+      mobNameToSum[mob.name] = mob.kills;
+    });
+  });
+  
   return mobNameToSum;
 }

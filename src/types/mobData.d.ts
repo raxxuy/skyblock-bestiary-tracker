@@ -2,12 +2,12 @@ export type MobAliases = Record<string, MobAlias>;
 
 export type MobAlias = {
   name: string;
-  category: string;
+  family: string;
 };
 
 export type FamilyData = {
   name: string;
-  subcategory: boolean;
+  category: boolean;
   mobs: Record<string, MobData>;
 };
 
