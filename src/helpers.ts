@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Profile, Member } from "@/types/profileData";
-import { MobAlias, MobAliases, FamilyData } from "@/types/mobData";
+import { Profile, Member, MobAlias, MobAliases, FamilyData } from "@/types";
 import aliases from "@/data/aliases.json";
 
 /**

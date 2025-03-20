@@ -41,9 +41,7 @@ export default function Home() {
     fetchData(query);
   }, [query, fetchData]);
 
-  if (!theme) {
-    return null;
-  }
+  if (!theme) return null;
 
   return (
     <div className="w-full min-h-screen flex flex-col p-4 md:p-8">

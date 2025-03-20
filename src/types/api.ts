@@ -5,7 +5,7 @@ export type InsertUserResponse = {
   success: boolean;
   cause?: string;
   user?: User;
-}
+};
 
 export type MojangResponse = {
   success: boolean;

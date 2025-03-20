@@ -7,10 +7,8 @@ import useTheme from "@/hooks/useTheme";
 export default function NavigationBar() {
   const { theme, setTheme } = useTheme();
 
-  if (!theme) {
-    return null;
-  }
-
+  if (!theme) return null;
+  
   return (
     <div className="
       w-full h-fit flex justify-between items-center px-2 py-2 border-b-2 shadow-md 

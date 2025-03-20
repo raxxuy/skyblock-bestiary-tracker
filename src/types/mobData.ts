@@ -16,4 +16,4 @@ export type MobData = {
   bracket: number;
   tier: number;
   kills: number;
-}
+};
