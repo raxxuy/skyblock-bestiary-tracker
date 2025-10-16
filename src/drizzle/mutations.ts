@@ -3,9 +3,16 @@ import { db } from "./db";
 import { User, userTable } from "./schema";
 
 export const createUser = async (user: User) => {
-  await db.insert(userTable).values(user);
+  const [createdUser] = await db.insert(userTable).values(user).returning();
+  return createdUser;
 };
 
-export const updateUser = async (mojangId: string, user: User) => {
-  await db.update(userTable).set(user).where(eq(userTable.mojangId, mojangId));
+export const updateUser = async (mojangId: string, data: Partial<User>) => {
+  const [updatedUser] = await db
+    .update(userTable)
+    .set(data)
+    .where(eq(userTable.mojangId, mojangId))
+    .returning()
+    .limit(1);
+  return updatedUser;
 };
