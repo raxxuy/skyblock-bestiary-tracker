@@ -30,19 +30,17 @@ export async function GET(
     return new Response("Username is required", { status: 400 });
   }
 
-  const usernameNormalized = username.toLowerCase();
-
-  let user = await getUser(usernameNormalized);
+  let user = await getUser(username);
 
   if (!user) {
-    const mojangProfile = await getMojangProfile(usernameNormalized);
+    const mojangProfile = await getMojangProfile(username);
 
     if (!mojangProfile) {
       return new Response("User not found", { status: 404 });
     }
 
     user = await createUser({
-      username: usernameNormalized,
+      username: mojangProfile.name,
       mojangId: mojangProfile.id,
     });
   }

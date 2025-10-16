@@ -27,9 +27,10 @@ export default function Home() {
           {profile ? (
             <div className="h-full w-full">
               <h2>{profile.cute_name}</h2>
+              <h3>{user.username}</h3>
               <div>
                 <pre>
-                  <code>{JSON.stringify(profile.members, null, 2)}</code>
+                  <code>{JSON.stringify(profile.members[user.mojangId].bestiary.kills, null, 2)}</code>
                 </pre>
               </div>
             </div>

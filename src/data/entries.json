@@ -1,0 +1,58 @@
+{
+  "^forest_island_bat_3$": {
+    "family": "Private Island",
+    "name": "Bat"
+  },
+  "^creeper_1$": {
+    "family": "Private Island",
+    "name": "Creeper"
+  },
+  "^enderman_[1-15]$": {
+    "family": "Private Island",
+    "name": "Enderman"
+  },
+  "^skeleton_[1-15]$": {
+    "family": "Private Island",
+    "name": "Skeleton"
+  },
+  "^slime_[1-15]$": {
+    "family": "Private Island",
+    "name": "Slime"
+  },
+  "^spider_[1-15]$": {
+    "family": "Private Island",
+    "name": "Spider"
+  },
+  "^witch_[1-15]$": {
+    "family": "Private Island",
+    "name": "Witch"
+  },
+  "^zombie_[1-15]$": {
+    "family": "Private Island",
+    "name": "Zombie"
+  },
+  "^unburried_zombie_30$": {
+    "family": "Hub",
+    "name": "Crypt Ghoul"
+  },
+  "^unburried_zombie_60$": {
+    "family": "Hub",
+    "name": "Golden Ghoul"
+  },
+  "^graveyard_zombie_1$": {
+    "family": "Hub",
+    "name": "Graveyard Zombie"
+  },
+  "^old_wolf_50$": {
+    "family": "Hub",
+    "name": "Old Wolf"
+  },
+  "^ruin_wolf_15$": {
+    "family": "Hub",
+    "name": "Wolf"
+  },
+  "^zombie_villager_1$": {
+    "family": "Hub",
+    "name": "Zombie Villager"
+  }
+}

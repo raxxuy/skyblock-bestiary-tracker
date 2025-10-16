@@ -1,0 +1,1831 @@
+{
+  "Private Island": [
+    {
+      "title": "Bat",
+      "bracket": 1,
+      "tier": 5,
+      "kills_to_max": 200,
+      "description": "Can be found hanging around.\n"
+    },
+    {
+      "title": "Creeper",
+      "bracket": 1,
+      "tier": 5,
+      "kills_to_max": 200,
+      "description": "Look out for their hiss!\n"
+    },
+    {
+      "title": "Enderman",
+      "bracket": 1,
+      "tier": 5,
+      "kills_to_max": 200,
+      "description": "Don't like making eye contact.\n"
+    },
+    {
+      "title": "Skeleton",
+      "bracket": 1,
+      "tier": 5,
+      "kills_to_max": 200,
+      "description": "Just a normal skelly.\n"
+    },
+    {
+      "title": "Slime",
+      "bracket": 1,
+      "tier": 5,
+      "kills_to_max": 200,
+      "description": "World's loudest creatures.\n"
+    },
+    {
+      "title": "Spider",
+      "bracket": 1,
+      "tier": 5,
+      "kills_to_max": 200,
+      "description": "Likes to climb.\n"
+    },
+    {
+      "title": "Witch",
+      "bracket": 1,
+      "tier": 5,
+      "kills_to_max": 200,
+      "description": "Masters of alchemy.\n"
+    },
+    {
+      "title": "Zombie",
+      "bracket": 1,
+      "tier": 5,
+      "kills_to_max": 200,
+      "description": "Brains.\n"
+    }
+  ],
+  "Hub": [
+    {
+      "title": "Crypt Ghoul",
+      "bracket": 1,
+      "tier": 15,
+      "kills_to_max": 40000,
+      "description": "Long buried, newly unburied.\n"
+    },
+    {
+      "title": "Golden Ghoul",
+      "bracket": 3,
+      "tier": 15,
+      "kills_to_max": 4000,
+      "description": "A ghoul that fell into molten gold.\n"
+    },
+    {
+      "title": "Graveyard Zombie",
+      "bracket": 1,
+      "tier": 5,
+      "kills_to_max": 200,
+      "description": "Brains.\n"
+    },
+    {
+      "title": "Old Wolf",
+      "bracket": 3,
+      "tier": 15,
+      "kills_to_max": 4000,
+      "description": "Wolves older than the island itself.\n"
+    },
+    {
+      "title": "Wolf",
+      "bracket": 1,
+      "tier": 15,
+      "kills_to_max": 40000,
+      "description": "Roaming the remains of a Castle far from its best days.\n"
+    },
+    {
+      "title": "Zombie Villager",
+      "bracket": 4,
+      "tier": 15,
+      "kills_to_max": 1000,
+      "description": "The real enemy isn't the dead - it's the living.\n"
+    }
+  ],
+  "The Farming Islands": [
+    {
+      "title": "Chicken",
+      "bracket": 1,
+      "tier": 5,
+      "kills_to_max": 200,
+      "description": "Wishes it could fly.\n"
+    },
+    {
+      "title": "Cow",
+      "bracket": 1,
+      "tier": 5,
+      "kills_to_max": 200,
+      "description": "Natural predator of grass.\n"
+    },
+    {
+      "title": "Mushroom Cow",
+      "bracket": 1,
+      "tier": 5,
+      "kills_to_max": 200,
+      "description": "Technically a health code violation\n"
+    },
+    {
+      "title": "Pig",
+      "bracket": 1,
+      "tier": 5,
+      "kills_to_max": 200,
+      "description": "Smells like Bacon.\n"
+    },
+    {
+      "title": "Rabbit",
+      "bracket": 1,
+      "tier": 5,
+      "kills_to_max": 200,
+      "description": "Never stops hopping.\n"
+    },
+    {
+      "title": "Sheep",
+      "bracket": 1,
+      "tier": 5,
+      "kills_to_max": 200,
+      "description": "Beep beep I'm a sheep.\n"
+    }
+  ],
+  "Garden": [
+    {
+      "title": "Beetle",
+      "bracket": 6,
+      "tier": 15,
+      "kills_to_max": 250,
+      "description": "A particularly gross pest.\n"
+    },
+    {
+      "title": "Cricket",
+      "bracket": 6,
+      "tier": 15,
+      "kills_to_max": 250,
+      "description": "Usually just a hop, skip, and a jump away.\n"
+    },
+    {
+      "title": "Field Mouse",
+      "bracket": 7,
+      "tier": 15,
+      "kills_to_max": 100,
+      "description": "A shy little fellow!\n"
+    },
+    {
+      "title": "Earthworm",
+      "bracket": 6,
+      "tier": 15,
+      "kills_to_max": 250,
+      "description": "Big, scary, and pink.\n"
+    },
+    {
+      "title": "Fly",
+      "bracket": 6,
+      "tier": 15,
+      "kills_to_max": 250,
+      "description": "A common Garden pest, known for its big eyes.\n"
+    },
+    {
+      "title": "Locust",
+      "bracket": 6,
+      "tier": 15,
+      "kills_to_max": 250,
+      "description": "Pretty loud, and pretty annoying.\n"
+    },
+    {
+      "title": "Mite",
+      "bracket": 6,
+      "tier": 15,
+      "kills_to_max": 250,
+      "description": "Try and you just mite.\n"
+    },
+    {
+      "title": "Mosquito",
+      "bracket": 6,
+      "tier": 15,
+      "kills_to_max": 250,
+      "description": "One of nature's most useless creatures.\n"
+    },
+    {
+      "title": "Moth",
+      "bracket": 6,
+      "tier": 15,
+      "kills_to_max": 250,
+      "description": "Fluttering around a Garden near you.\n"
+    },
+    {
+      "title": "Rat",
+      "bracket": 6,
+      "tier": 15,
+      "kills_to_max": 250,
+      "description": "Quick, yet nasty.\n"
+    },
+    {
+      "title": "Slug",
+      "bracket": 6,
+      "tier": 15,
+      "kills_to_max": 250,
+      "description": "Methodical in movement, ineffective in survival.\n"
+    }
+  ],
+  "Spider's Den": [
+    {
+      "title": "Arachne",
+      "bracket": 7,
+      "tier": 20,
+      "kills_to_max": 500,
+      "description": "The strongest spider in the den.\n"
+    },
+    {
+      "title": "Arachne's Brood",
+      "bracket": 4,
+      "tier": 15,
+      "kills_to_max": 1000,
+      "description": "Brood of Arachne.\n"
+    },
+    {
+      "title": "Arachne's Keeper",
+      "bracket": 5,
+      "tier": 15,
+      "kills_to_max": 400,
+      "description": "Keeper of Arachne.\n"
+    },
+    {
+      "title": "Broodmother",
+      "bracket": 5,
+      "tier": 15,
+      "kills_to_max": 400,
+      "description": "The Broodmother to end all Broodmothers.\n"
+    },
+    {
+      "title": "Dasher Spider",
+      "bracket": 2,
+      "tier": 15,
+      "kills_to_max": 10000,
+      "description": "Dashingly striking, watch for this spider's long jumps!\n"
+    },
+    {
+      "title": "Gravel Skeleton",
+      "bracket": 3,
+      "tier": 15,
+      "kills_to_max": 4000,
+      "description": "These Skeletons just never stay dead.\n"
+    },
+    {
+      "title": "Rain Slime",
+      "bracket": 4,
+      "tier": 15,
+      "kills_to_max": 1000,
+      "description": "These Slimes enjoy rain...and jumping to their deaths.\n"
+    },
+    {
+      "title": "Toxic Rain Slime",
+      "bracket": 4,
+      "tier": 15,
+      "kills_to_max": 1000,
+      "description": "These Slimes enjoy rain...and jumping to their deaths.\n"
+    },
+    {
+      "title": "Silverfish",
+      "bracket": 2,
+      "tier": 15,
+      "kills_to_max": 10000,
+      "description": "Though weak alone, they find strength in numbers.\n"
+    },
+    {
+      "title": "Spider Jockey",
+      "bracket": 3,
+      "tier": 15,
+      "kills_to_max": 4000,
+      "description": "The Skeletons have been controlling Spiders since the dawn of minekind.\n"
+    },
+    {
+      "title": "Splitter Spider",
+      "bracket": 2,
+      "tier": 15,
+      "kills_to_max": 10000,
+      "description": "If you think you've killed this spider, think again.\n"
+    },
+    {
+      "title": "Voracious Spider",
+      "bracket": 2,
+      "tier": 15,
+      "kills_to_max": 10000,
+      "description": "This spider is quite voracious.\n"
+    },
+    {
+      "title": "Weaver Spider",
+      "bracket": 2,
+      "tier": 15,
+      "kills_to_max": 10000,
+      "description": "Spins a web of lies.\n"
+    }
+  ],
+  "The End": [
+    {
+      "title": "Young Dragon",
+      "bracket": 5,
+      "tier": 20,
+      "kills_to_max": 1000,
+      "description": "Inside the Dragon's Den, there is no escape from the fury of the beasts.\n"
+    },
+    {
+      "title": "Old Dragon",
+      "bracket": 5,
+      "tier": 20,
+      "kills_to_max": 1000,
+      "description": "Inside the Dragon's Den, there is no escape from the fury of the beasts.\n"
+    },
+    {
+      "title": "Strong Dragon",
+      "bracket": 5,
+      "tier": 20,
+      "kills_to_max": 1000,
+      "description": "Inside the Dragon's Den, there is no escape from the fury of the beasts.\n"
+    },
+    {
+      "title": "Wise Dragon",
+      "bracket": 5,
+      "tier": 20,
+      "kills_to_max": 1000,
+      "description": "Inside the Dragon's Den, there is no escape from the fury of the beasts.\n"
+    },
+    {
+      "title": "Unstable Dragon",
+      "bracket": 5,
+      "tier": 20,
+      "kills_to_max": 1000,
+      "description": "Inside the Dragon's Den, there is no escape from the fury of the beasts.\n"
+    },
+    {
+      "title": "Protector Dragon",
+      "bracket": 5,
+      "tier": 20,
+      "kills_to_max": 1000,
+      "description": "Inside the Dragon's Den, there is no escape from the fury of the beasts.\n"
+    },
+    {
+      "title": "Superior Dragon",
+      "bracket": 5,
+      "tier": 20,
+      "kills_to_max": 1000,
+      "description": "Inside the Dragon's Den, there is no escape from the fury of the beasts.\n"
+    },
+    {
+      "title": "Enderman",
+      "bracket": 4,
+      "tier": 25,
+      "kills_to_max": 25000,
+      "description": "Not your mother's endermen.\n"
+    },
+    {
+      "title": "Endermite",
+      "bracket": 5,
+      "tier": 25,
+      "kills_to_max": 10000,
+      "description": "Hidden in the stone of The End.\n"
+    },
+    {
+      "title": "Nest Endermite",
+      "bracket": 5,
+      "tier": 25,
+      "kills_to_max": 10000,
+      "description": "Hidden in the stone of The End.\n"
+    },
+    {
+      "title": "End Stone Protector",
+      "bracket": 7,
+      "tier": 20,
+      "kills_to_max": 500,
+      "description": "Risen from the debris of Endstone.\n"
+    },
+    {
+      "title": "Obsidian Defender",
+      "bracket": 5,
+      "tier": 25,
+      "kills_to_max": 10000,
+      "description": "Forged from the forces of hot and cold.\n"
+    },
+    {
+      "title": "Voidling Extremist",
+      "bracket": 3,
+      "tier": 15,
+      "kills_to_max": 4000,
+      "description": "The top lieutenants of the void heraldry.\n"
+    },
+    {
+      "title": "Voidling Fanatic",
+      "bracket": 4,
+      "tier": 25,
+      "kills_to_max": 25000,
+      "description": "A step beyond zealotry.\n"
+    },
+    {
+      "title": "Seer",
+      "bracket": 5,
+      "tier": 25,
+      "kills_to_max": 10000,
+      "description": "Always watching.\n"
+    },
+    {
+      "title": "Zealot",
+      "bracket": 4,
+      "tier": 25,
+      "kills_to_max": 25000,
+      "description": "Unwavering in their devotion to the Dragon.\n"
+    },
+    {
+      "title": "Special Zealot",
+      "bracket": 4,
+      "tier": 25,
+      "kills_to_max": 25000,
+      "description": "Unwavering in their devotion to the Dragon.\n"
+    },
+    {
+      "title": "Zealot Bruiser",
+      "bracket": 4,
+      "tier": 25,
+      "kills_to_max": 25000,
+      "description": "Unwavering in their devotion to the Dragon.\n"
+    }
+  ],
+  "Crimson Isle": [
+    {
+      "title": "Ashfang",
+      "bracket": 7,
+      "tier": 20,
+      "kills_to_max": 500,
+      "description": "They also call themselves \"The Twins\".\n"
+    },
+    {
+      "title": "Barbarian Duke X",
+      "bracket": 7,
+      "tier": 20,
+      "kills_to_max": 500,
+      "description": "He's got anger issues.\n"
+    },
+    {
+      "title": "Bladesoul",
+      "bracket": 7,
+      "tier": 20,
+      "kills_to_max": 500,
+      "description": "Used to be a prince.\n"
+    },
+    {
+      "title": "Blaze",
+      "bracket": 4,
+      "tier": 20,
+      "kills_to_max": 3000,
+      "description": "They started the fire.\n"
+    },
+    {
+      "title": "Bezal",
+      "bracket": 4,
+      "tier": 20,
+      "kills_to_max": 3000,
+      "description": "They started the fire.\n"
+    },
+    {
+      "title": "Mutated Blaze",
+      "bracket": 4,
+      "tier": 20,
+      "kills_to_max": 3000,
+      "description": "They started the fire.\n"
+    },
+    {
+      "title": "Flaming Spider",
+      "bracket": 3,
+      "tier": 20,
+      "kills_to_max": 10000,
+      "description": "Can't stop burning.\n"
+    },
+    {
+      "title": "Flare",
+      "bracket": 1,
+      "tier": 20,
+      "kills_to_max": 100000,
+      "description": "Oh baby, a triple!\n"
+    },
+    {
+      "title": "Ghast",
+      "bracket": 4,
+      "tier": 20,
+      "kills_to_max": 3000,
+      "description": "Their screams can be heard from miles away.\n"
+    },
+    {
+      "title": "Dive Ghast",
+      "bracket": 4,
+      "tier": 20,
+      "kills_to_max": 3000,
+      "description": "Their screams can be heard from miles away.\n"
+    },
+    {
+      "title": "Kada Knight",
+      "bracket": 4,
+      "tier": 20,
+      "kills_to_max": 3000,
+      "description": "A short walk for you is a long walk for them.\n"
+    },
+    {
+      "title": "Mage Outlaw",
+      "bracket": 7,
+      "tier": 20,
+      "kills_to_max": 500,
+      "description": "Ate too much Sulphur.\n"
+    },
+    {
+      "title": "Magma Boss",
+      "bracket": 7,
+      "tier": 20,
+      "kills_to_max": 500,
+      "description": "Like a Magma Cube, but bigger.\n"
+    },
+    {
+      "title": "Magma Cube",
+      "bracket": 3,
+      "tier": 20,
+      "kills_to_max": 10000,
+      "description": "Like Slime, but hotter.\n"
+    },
+    {
+      "title": "Pack Magma Cube",
+      "bracket": 3,
+      "tier": 20,
+      "kills_to_max": 10000,
+      "description": "Like Slime, but hotter.\n"
+    },
+    {
+      "title": "Magma Cube Rider",
+      "bracket": 4,
+      "tier": 20,
+      "kills_to_max": 3000,
+      "description": "Relatively docile...until you push them.\n"
+    },
+    {
+      "title": "Matcho",
+      "bracket": 5,
+      "tier": 15,
+      "kills_to_max": 400,
+      "description": "Has quite an explosive temper.\n"
+    },
+    {
+      "title": "Millennia-Aged Blaze",
+      "bracket": 3,
+      "tier": 15,
+      "kills_to_max": 4000,
+      "description": "Blazes rarely live past the age of 900.\n"
+    },
+    {
+      "title": "Mushroom Bull",
+      "bracket": 3,
+      "tier": 20,
+      "kills_to_max": 10000,
+      "description": "Born with digestive problems.\n"
+    },
+    {
+      "title": "Smoldering Blaze",
+      "bracket": 2,
+      "tier": 20,
+      "kills_to_max": 25000,
+      "description": "It's on fire. But more than usual.\n"
+    },
+    {
+      "title": "Hellwisp",
+      "bracket": 5,
+      "tier": 20,
+      "kills_to_max": 1000,
+      "description": "Offspring of The Matriarch.\n"
+    },
+    {
+      "title": "Vanquisher",
+      "bracket": 5,
+      "tier": 20,
+      "kills_to_max": 1000,
+      "description": "The embodiment of vengeful souls that come for revenge.\n"
+    },
+    {
+      "title": "Wither Skeleton",
+      "bracket": 4,
+      "tier": 20,
+      "kills_to_max": 3000,
+      "description": "Keepers of the Crimson Isle.\n"
+    },
+    {
+      "title": "Wither Spectre",
+      "bracket": 3,
+      "tier": 20,
+      "kills_to_max": 10000,
+      "description": "Hasn't seen light in ages.\n"
+    }
+  ],
+  "Deep Caverns": [
+    {
+      "title": "Emerald Slime",
+      "bracket": 1,
+      "tier": 10,
+      "kills_to_max": 3000,
+      "description": "It is said that these slimes absorb emeralds to grow larger.\n"
+    },
+    {
+      "title": "Lapis Zombie",
+      "bracket": 1,
+      "tier": 10,
+      "kills_to_max": 3000,
+      "description": "These zombies adapted to their environment, using the lapis around them as a defense mechanism.\n"
+    },
+    {
+      "title": "Miner Skeleton",
+      "bracket": 1,
+      "tier": 10,
+      "kills_to_max": 3000,
+      "description": "These skeletons have crafted gear from the diamonds around them - resulting in a look both fashionable and protective.\n"
+    },
+    {
+      "title": "Miner Zombie",
+      "bracket": 1,
+      "tier": 10,
+      "kills_to_max": 3000,
+      "description": "Like their skeleton counterparts, these zombies have bedazzled themselves throughout the years.\n"
+    },
+    {
+      "title": "Redstone Pigman",
+      "bracket": 1,
+      "tier": 10,
+      "kills_to_max": 3000,
+      "description": "These pigmen will defend their redstone to the death.\n"
+    },
+    {
+      "title": "Sneaky Creeper",
+      "bracket": 3,
+      "tier": 10,
+      "kills_to_max": 300,
+      "description": "They be creepin'.\n"
+    }
+  ],
+  "Dwarven Mines": [
+    {
+      "title": "Diamond Goblin",
+      "bracket": 7,
+      "tier": 15,
+      "kills_to_max": 100,
+      "description": "Does nothing but steal, even from its fellow goblins.\n"
+    },
+    {
+      "title": "Ghost",
+      "bracket": 3,
+      "tier": 25,
+      "kills_to_max": 100000,
+      "description": "It is hard to find that which you cannot see.\n"
+    },
+    {
+      "title": "Glacite Bowman",
+      "bracket": 4,
+      "tier": 15,
+      "kills_to_max": 1000,
+      "description": "Unable to see, it hunts by sound\n"
+    },
+    {
+      "title": "Glacite Caver",
+      "bracket": 4,
+      "tier": 15,
+      "kills_to_max": 1000,
+      "description": "Dug too deep and never looked back.\n"
+    },
+    {
+      "title": "Glacite Mage",
+      "bracket": 4,
+      "tier": 15,
+      "kills_to_max": 1000,
+      "description": "Unknowing and unpredictable in its destruction.\n"
+    },
+    {
+      "title": "Glacite Mutt",
+      "bracket": 4,
+      "tier": 15,
+      "kills_to_max": 1000,
+      "description": "Remarkably loyal, even in death.\n"
+    },
+    {
+      "title": "Glacite Walker",
+      "bracket": 2,
+      "tier": 15,
+      "kills_to_max": 10000,
+      "description": "Guardians of the Gate to the icy caves below.\n"
+    },
+    {
+      "title": "Goblin",
+      "bracket": 2,
+      "tier": 20,
+      "kills_to_max": 25000,
+      "description": "The Goblins have plagued the Dwarven Mines for centuries.\n"
+    },
+    {
+      "title": "Fireslinger",
+      "bracket": 2,
+      "tier": 20,
+      "kills_to_max": 25000,
+      "description": "The Goblins have plagued the Dwarven Mines for centuries.\n"
+    },
+    {
+      "title": "Creeperlobber",
+      "bracket": 2,
+      "tier": 20,
+      "kills_to_max": 25000,
+      "description": "The Goblins have plagued the Dwarven Mines for centuries.\n"
+    },
+    {
+      "title": "Knifethrower",
+      "bracket": 2,
+      "tier": 20,
+      "kills_to_max": 25000,
+      "description": "The Goblins have plagued the Dwarven Mines for centuries.\n"
+    },
+    {
+      "title": "Goblin Flamethrower",
+      "bracket": 2,
+      "tier": 20,
+      "kills_to_max": 25000,
+      "description": "The Goblins have plagued the Dwarven Mines for centuries.\n"
+    },
+    {
+      "title": "Murderlover",
+      "bracket": 2,
+      "tier": 20,
+      "kills_to_max": 25000,
+      "description": "The Goblins have plagued the Dwarven Mines for centuries.\n"
+    },
+    {
+      "title": "Weakling",
+      "bracket": 4,
+      "tier": 15,
+      "kills_to_max": 1000,
+      "description": "If it moves, it gets smashed.\n"
+    },
+    {
+      "title": "Fireslinger",
+      "bracket": 4,
+      "tier": 15,
+      "kills_to_max": 1000,
+      "description": "If it moves, it gets smashed.\n"
+    },
+    {
+      "title": "Creeperlobber",
+      "bracket": 4,
+      "tier": 15,
+      "kills_to_max": 1000,
+      "description": "If it moves, it gets smashed.\n"
+    },
+    {
+      "title": "Creeper",
+      "bracket": 4,
+      "tier": 15,
+      "kills_to_max": 1000,
+      "description": "If it moves, it gets smashed.\n"
+    },
+    {
+      "title": "Pitfighter",
+      "bracket": 4,
+      "tier": 15,
+      "kills_to_max": 1000,
+      "description": "If it moves, it gets smashed.\n"
+    },
+    {
+      "title": "Murderlover",
+      "bracket": 4,
+      "tier": 15,
+      "kills_to_max": 1000,
+      "description": "If it moves, it gets smashed.\n"
+    },
+    {
+      "title": "Superprotectron",
+      "bracket": 4,
+      "tier": 15,
+      "kills_to_max": 1000,
+      "description": "If it moves, it gets smashed.\n"
+    },
+    {
+      "title": "Golden Goblin",
+      "bracket": 5,
+      "tier": 15,
+      "kills_to_max": 400,
+      "description": "Take the things you love in life, and run with them.\n"
+    },
+    {
+      "title": "Powder Ghast",
+      "bracket": 1,
+      "tier": 5,
+      "kills_to_max": 200,
+      "description": "Powder and coal replaces ash and soot!\n"
+    },
+    {
+      "title": "Star Sentry",
+      "bracket": 4,
+      "tier": 15,
+      "kills_to_max": 1000,
+      "description": "Defenders of the Fallen Star.\n"
+    },
+    {
+      "title": "Treasure Hoarder",
+      "bracket": 4,
+      "tier": 15,
+      "kills_to_max": 1000,
+      "description": "The real treasure was the gold we found along the way.\n"
+    }
+  ],
+  "Crystal Hollows": [
+    {
+      "title": "Automaton",
+      "bracket": 2,
+      "tier": 15,
+      "kills_to_max": 10000,
+      "description": "Ancient robots which protect the lands of the Precursor from whomever dares to trespass.\n"
+    },
+    {
+      "title": "Bal",
+      "bracket": 6,
+      "tier": 15,
+      "kills_to_max": 250,
+      "description": "Scourge of Khazad-d\u00fbm.\n"
+    },
+    {
+      "title": "Butterfly",
+      "bracket": 4,
+      "tier": 15,
+      "kills_to_max": 1000,
+      "description": "Beautiful critters that roam around harmlessly in Fairy regions.\n"
+    },
+    {
+      "title": "Grunt",
+      "bracket": 3,
+      "tier": 15,
+      "kills_to_max": 4000,
+      "description": "Team Treasurite is up to no good. Prepare for trouble!\n"
+    },
+    {
+      "title": "Executive Viper",
+      "bracket": 3,
+      "tier": 15,
+      "kills_to_max": 4000,
+      "description": "Team Treasurite is up to no good. Prepare for trouble!\n"
+    },
+    {
+      "title": "Executive Wendy",
+      "bracket": 3,
+      "tier": 15,
+      "kills_to_max": 4000,
+      "description": "Team Treasurite is up to no good. Prepare for trouble!\n"
+    },
+    {
+      "title": "Executive Sebastian",
+      "bracket": 3,
+      "tier": 15,
+      "kills_to_max": 4000,
+      "description": "Team Treasurite is up to no good. Prepare for trouble!\n"
+    },
+    {
+      "title": "Boss Corleone",
+      "bracket": 7,
+      "tier": 15,
+      "kills_to_max": 100,
+      "description": "The mastermind behind Team Treasurite.\n"
+    },
+    {
+      "title": "Key Guardian",
+      "bracket": 6,
+      "tier": 15,
+      "kills_to_max": 250,
+      "description": "Works as a locksmith.\n"
+    },
+    {
+      "title": "Sludge",
+      "bracket": 2,
+      "tier": 15,
+      "kills_to_max": 10000,
+      "description": "They say that the juice of these slimes has valuable magical properties.\n"
+    },
+    {
+      "title": "Thyst",
+      "bracket": 3,
+      "tier": 15,
+      "kills_to_max": 4000,
+      "description": "These infectious worms nourish themselves from Amethyst veins.\n"
+    },
+    {
+      "title": "Worm",
+      "bracket": 5,
+      "tier": 15,
+      "kills_to_max": 400,
+      "description": "Stone worms can and will eat anything.\n"
+    },
+    {
+      "title": "Scatha",
+      "bracket": 5,
+      "tier": 15,
+      "kills_to_max": 400,
+      "description": "Stone worms can and will eat anything.\n"
+    },
+    {
+      "title": "Yog",
+      "bracket": 3,
+      "tier": 15,
+      "kills_to_max": 4000,
+      "description": "Born in the depths, risen from magma.\n"
+    }
+  ],
+  "The Park": [
+    {
+      "title": "Howling Spirit",
+      "bracket": 2,
+      "tier": 15,
+      "kills_to_max": 10000,
+      "description": "Howling at the moon.\n"
+    },
+    {
+      "title": "Pack Spirit",
+      "bracket": 2,
+      "tier": 15,
+      "kills_to_max": 10000,
+      "description": "Spirits of long-dead wolves, still prowling the caves for prey.\n"
+    },
+    {
+      "title": "Soul of the Alpha",
+      "bracket": 4,
+      "tier": 15,
+      "kills_to_max": 1000,
+      "description": "Ghastly leader of the pack.\n"
+    }
+  ],
+  "Spooky Festival": [
+    {
+      "title": "Crazy Witch",
+      "bracket": 2,
+      "tier": 10,
+      "kills_to_max": 750,
+      "description": "This witch is brewing up trouble.\n"
+    },
+    {
+      "title": "Headless Horseman",
+      "bracket": 7,
+      "tier": 20,
+      "kills_to_max": 500,
+      "description": "Some say he lost his mind long before he lost his head.\n"
+    },
+    {
+      "title": "Phantom Spirit",
+      "bracket": 2,
+      "tier": 10,
+      "kills_to_max": 750,
+      "description": "Possess the supernatural ability to...possess...you.\n"
+    },
+    {
+      "title": "Scary Jerry",
+      "bracket": 2,
+      "tier": 10,
+      "kills_to_max": 750,
+      "description": "He's very scary.\n"
+    },
+    {
+      "title": "Trick or Treater",
+      "bracket": 2,
+      "tier": 10,
+      "kills_to_max": 750,
+      "description": "It's always a trick.\n"
+    },
+    {
+      "title": "Wither Gourd",
+      "bracket": 2,
+      "tier": 10,
+      "kills_to_max": 750,
+      "description": "Who throws a pumpkin? Honestly!\n"
+    },
+    {
+      "title": "Wraith",
+      "bracket": 2,
+      "tier": 10,
+      "kills_to_max": 750,
+      "description": "Haunting SkyBlock islands everywhere.\n"
+    }
+  ],
+  "The Catacombs": [
+    {
+      "title": "Angry Archaeologist",
+      "bracket": 7,
+      "tier": 25,
+      "kills_to_max": 3000,
+      "description": "Angered by what he's found below.\n"
+    },
+    {
+      "title": "Bat (Catacombs)",
+      "bracket": 4,
+      "tier": 15,
+      "kills_to_max": 1000,
+      "description": "Likes to keep to themselves.\n"
+    },
+    {
+      "title": "Cellar Spider",
+      "bracket": 4,
+      "tier": 15,
+      "kills_to_max": 1000,
+      "description": "Creepy crawler.\n"
+    },
+    {
+      "title": "Crypt Dreadlord",
+      "bracket": 4,
+      "tier": 25,
+      "kills_to_max": 25000,
+      "description": "Trained in the dark art of wither magic.\n"
+    },
+    {
+      "title": "Crypt Lurker",
+      "bracket": 4,
+      "tier": 25,
+      "kills_to_max": 25000,
+      "description": "Lurking in the shadows.\n"
+    },
+    {
+      "title": "Crypt Souleater",
+      "bracket": 4,
+      "tier": 25,
+      "kills_to_max": 25000,
+      "description": "A soul a day keeps the doctor away.\n"
+    },
+    {
+      "title": "Fels",
+      "bracket": 5,
+      "tier": 25,
+      "kills_to_max": 10000,
+      "description": "Hide and Seek Champion.\n"
+    },
+    {
+      "title": "Sadan",
+      "bracket": 4,
+      "tier": 15,
+      "kills_to_max": 1000,
+      "description": "Prefers to sleep in, grumpy if disturbed.\n"
+    },
+    {
+      "title": "King Midas",
+      "bracket": 6,
+      "tier": 20,
+      "kills_to_max": 750,
+      "description": "He loves gold.\n"
+    },
+    {
+      "title": "Lonely Spider",
+      "bracket": 4,
+      "tier": 25,
+      "kills_to_max": 25000,
+      "description": "So lonely.\n"
+    },
+    {
+      "title": "Lost Adventurer",
+      "bracket": 7,
+      "tier": 25,
+      "kills_to_max": 3000,
+      "description": "Long lost to the depths of the Catacombs.\n"
+    },
+    {
+      "title": "Mimic",
+      "bracket": 4,
+      "tier": 15,
+      "kills_to_max": 1000,
+      "description": "Classic RPG trope, in block form.\n"
+    },
+    {
+      "title": "Scared Skeleton",
+      "bracket": 3,
+      "tier": 15,
+      "kills_to_max": 4000,
+      "description": "Scared of its own shadow.\n"
+    },
+    {
+      "title": "Shadow Assassin",
+      "bracket": 7,
+      "tier": 25,
+      "kills_to_max": 3000,
+      "description": "Silent, but deadly.\n"
+    },
+    {
+      "title": "Skeleton Grunt",
+      "bracket": 3,
+      "tier": 15,
+      "kills_to_max": 4000,
+      "description": "Just more grunts in the platoon.\n"
+    },
+    {
+      "title": "Skeleton Lord",
+      "bracket": 5,
+      "tier": 20,
+      "kills_to_max": 1000,
+      "description": "Despite the lack of organs, still managed to be promoted.\n"
+    },
+    {
+      "title": "Skeleton Master",
+      "bracket": 4,
+      "tier": 25,
+      "kills_to_max": 25000,
+      "description": "Leader of the Catacombs' skeleton army.\n"
+    },
+    {
+      "title": "Skeleton Soldier",
+      "bracket": 1,
+      "tier": 15,
+      "kills_to_max": 40000,
+      "description": "Defenders of the Catacombs.\n"
+    },
+    {
+      "title": "Skeletor",
+      "bracket": 5,
+      "tier": 25,
+      "kills_to_max": 10000,
+      "description": "I am Skeletor.\n"
+    },
+    {
+      "title": "Sniper",
+      "bracket": 3,
+      "tier": 15,
+      "kills_to_max": 4000,
+      "description": "Said to have sniped adventurers from floors away.\n"
+    },
+    {
+      "title": "Super Archer",
+      "bracket": 5,
+      "tier": 25,
+      "kills_to_max": 10000,
+      "description": "Bouncy, yet dangerous.\n"
+    },
+    {
+      "title": "Super Tank Zombie",
+      "bracket": 4,
+      "tier": 25,
+      "kills_to_max": 25000,
+      "description": "Heftiest zombie.\n"
+    },
+    {
+      "title": "Tank Zombie",
+      "bracket": 3,
+      "tier": 15,
+      "kills_to_max": 4000,
+      "description": "Hefty zombie.\n"
+    },
+    {
+      "title": "Terracotta",
+      "bracket": 1,
+      "tier": 15,
+      "kills_to_max": 40000,
+      "description": "Stained Hardened Clay.\n"
+    },
+    {
+      "title": "The Watcher",
+      "bracket": 2,
+      "tier": 15,
+      "kills_to_max": 10000,
+      "description": "The Watcher's personal henchmen.\n"
+    },
+    {
+      "title": "Undead Skeleton",
+      "bracket": 4,
+      "tier": 25,
+      "kills_to_max": 25000,
+      "description": "Redundant name.\n"
+    },
+    {
+      "title": "Wither Guard",
+      "bracket": 5,
+      "tier": 25,
+      "kills_to_max": 10000,
+      "description": "Never stopped anyone from entering the factory, but is trying his best.\n"
+    },
+    {
+      "title": "Wither Husk",
+      "bracket": 5,
+      "tier": 25,
+      "kills_to_max": 10000,
+      "description": "A shell of their former self.\n"
+    },
+    {
+      "title": "Wither Miner",
+      "bracket": 4,
+      "tier": 25,
+      "kills_to_max": 25000,
+      "description": "Kept in servitude for breaking blocks around the factory.\n"
+    },
+    {
+      "title": "Withermancer",
+      "bracket": 4,
+      "tier": 25,
+      "kills_to_max": 25000,
+      "description": "Learned their sorcery from the most vicious of teachers.\n"
+    },
+    {
+      "title": "Zombie Commander",
+      "bracket": 4,
+      "tier": 20,
+      "kills_to_max": 3000,
+      "description": "Leader of the Undead.\n"
+    },
+    {
+      "title": "Zombie Grunt",
+      "bracket": 3,
+      "tier": 15,
+      "kills_to_max": 4000,
+      "description": "Just more grunts in the platoon.\n"
+    },
+    {
+      "title": "Zombie Knight",
+      "bracket": 5,
+      "tier": 25,
+      "kills_to_max": 10000,
+      "description": "Knighted by Necron himself.\n"
+    },
+    {
+      "title": "Zombie Lord",
+      "bracket": 5,
+      "tier": 20,
+      "kills_to_max": 1000,
+      "description": "Commander among commanders.\n"
+    },
+    {
+      "title": "Zombie Soldier",
+      "bracket": 1,
+      "tier": 15,
+      "kills_to_max": 40000,
+      "description": "Defenders of the Catacombs.\n"
+    }
+  ],
+  "Fishing": {
+    "Fishing": [
+      {
+        "title": "Abyssal Miner",
+        "bracket": 6,
+        "tier": 15,
+        "kills_to_max": 250,
+        "description": "Didn't escape before the cave-in.\n"
+      },
+      {
+        "title": "Agarimoo",
+        "bracket": 3,
+        "tier": 15,
+        "kills_to_max": 4000,
+        "description": "Galactose-based heterogenous polysaccharide derived from rift algae.\n"
+      },
+      {
+        "title": "Carrot King",
+        "bracket": 5,
+        "tier": 15,
+        "kills_to_max": 400,
+        "description": "Has a vicious streak a mile wide.\n"
+      },
+      {
+        "title": "Catfish",
+        "bracket": 4,
+        "tier": 15,
+        "kills_to_max": 1000,
+        "description": "Looked different in the pictures.\n"
+      },
+      {
+        "title": "Deep Sea Protector",
+        "bracket": 4,
+        "tier": 15,
+        "kills_to_max": 1000,
+        "description": "Nobody knows what it protects.\n"
+      },
+      {
+        "title": "Guardian Defender",
+        "bracket": 4,
+        "tier": 15,
+        "kills_to_max": 1000,
+        "description": "Defends the sea.\n"
+      },
+      {
+        "title": "Mithril Grubber",
+        "bracket": 3,
+        "tier": 10,
+        "kills_to_max": 300,
+        "description": "I die a little every time I take out a Grubber...\n"
+      },
+      {
+        "title": "Night Squid",
+        "bracket": 4,
+        "tier": 15,
+        "kills_to_max": 1000,
+        "description": "Just a lowly squid...at night!\n"
+      },
+      {
+        "title": "Oasis Rabbit",
+        "bracket": 3,
+        "tier": 10,
+        "kills_to_max": 300,
+        "description": "Loyal subject of the Carrot King.\n"
+      },
+      {
+        "title": "Oasis Sheep",
+        "bracket": 3,
+        "tier": 10,
+        "kills_to_max": 300,
+        "description": "A test subject to see if a sheep shrinks when it dries.\n"
+      },
+      {
+        "title": "Poisoned Water Worm",
+        "bracket": 4,
+        "tier": 15,
+        "kills_to_max": 1000,
+        "description": "Somebody's poisoned the waterhole!\n"
+      },
+      {
+        "title": "Rider of the Deep",
+        "bracket": 3,
+        "tier": 15,
+        "kills_to_max": 4000,
+        "description": "The chicken is the one in charge.\n"
+      },
+      {
+        "title": "Sea Archer",
+        "bracket": 3,
+        "tier": 15,
+        "kills_to_max": 4000,
+        "description": "Though a gifted archer, has a love for fistfights.\n"
+      },
+      {
+        "title": "Sea Guardian",
+        "bracket": 3,
+        "tier": 15,
+        "kills_to_max": 4000,
+        "description": "Guards the sea.\n"
+      },
+      {
+        "title": "Sea Leech",
+        "bracket": 4,
+        "tier": 15,
+        "kills_to_max": 1000,
+        "description": "See, a leech!\n"
+      },
+      {
+        "title": "Sea Walker",
+        "bracket": 3,
+        "tier": 15,
+        "kills_to_max": 4000,
+        "description": "Why swim when you can simply walk?\n"
+      },
+      {
+        "title": "Sea Witch",
+        "bracket": 3,
+        "tier": 15,
+        "kills_to_max": 4000,
+        "description": "She'll turn you into a newt!\n"
+      },
+      {
+        "title": "Squid",
+        "bracket": 2,
+        "tier": 15,
+        "kills_to_max": 10000,
+        "description": "Just a lowly squid.\n"
+      },
+      {
+        "title": "The Loch Emperor",
+        "bracket": 7,
+        "tier": 15,
+        "kills_to_max": 100,
+        "description": "Emperor of the seven seas.\n"
+      },
+      {
+        "title": "Water Hydra",
+        "bracket": 5,
+        "tier": 15,
+        "kills_to_max": 400,
+        "description": "Unlike a regular hydra, this one grows another body as well!\n"
+      },
+      {
+        "title": "Water Worm",
+        "bracket": 4,
+        "tier": 15,
+        "kills_to_max": 1000,
+        "description": "Hasn't been poisoned...yet.\n"
+      }
+    ],
+    "Lava": [
+      {
+        "title": "Fire Eel",
+        "bracket": 4,
+        "tier": 15,
+        "kills_to_max": 1000,
+        "description": "Tastes like battery acid.\n"
+      },
+      {
+        "title": "Flaming Worm",
+        "bracket": 3,
+        "tier": 15,
+        "kills_to_max": 4000,
+        "description": "Like a regular worm, but on fire.\n"
+      },
+      {
+        "title": "Lava Blaze",
+        "bracket": 4,
+        "tier": 15,
+        "kills_to_max": 1000,
+        "description": "Is it made of lava or does it just live in it?\n"
+      },
+      {
+        "title": "Lava Flame",
+        "bracket": 4,
+        "tier": 15,
+        "kills_to_max": 1000,
+        "description": "Incarnation of pure heat.\n"
+      },
+      {
+        "title": "Lava Leech",
+        "bracket": 3,
+        "tier": 15,
+        "kills_to_max": 4000,
+        "description": "It's hard to love-a leech.\n"
+      },
+      {
+        "title": "Lava Pigman",
+        "bracket": 4,
+        "tier": 15,
+        "kills_to_max": 1000,
+        "description": "Normally, dunking pork in lava causes it to get charred. But not this one!\n"
+      },
+      {
+        "title": "Lord Jawbus",
+        "bracket": 7,
+        "tier": 15,
+        "kills_to_max": 100,
+        "description": "The mighty magma lord.\n"
+      },
+      {
+        "title": "Magma Slug",
+        "bracket": 2,
+        "tier": 15,
+        "kills_to_max": 10000,
+        "description": "Moves. Very. Slowly.\n"
+      },
+      {
+        "title": "Moogma",
+        "bracket": 3,
+        "tier": 15,
+        "kills_to_max": 4000,
+        "description": "Produces 100% fresh magma on a daily basis!\n"
+      },
+      {
+        "title": "Plhlegblast",
+        "bracket": 7,
+        "tier": 5,
+        "kills_to_max": 7,
+        "description": "Hard to spell, even harder to find.\n"
+      },
+      {
+        "title": "Pyroclastic Worm",
+        "bracket": 4,
+        "tier": 15,
+        "kills_to_max": 1000,
+        "description": "Travels up to 10 miles downhill during eruptions.\n"
+      },
+      {
+        "title": "Taurus",
+        "bracket": 4,
+        "tier": 15,
+        "kills_to_max": 1000,
+        "description": "Could never date a Pisces.\n"
+      },
+      {
+        "title": "Thunder",
+        "bracket": 5,
+        "tier": 15,
+        "kills_to_max": 400,
+        "description": "This is what happens on a bad forecast.\n"
+      }
+    ],
+    "Spooky Festival": [
+      {
+        "title": "Grim Reaper",
+        "bracket": 7,
+        "tier": 15,
+        "kills_to_max": 100,
+        "description": "An old friend.\n"
+      },
+      {
+        "title": "Nightmare",
+        "bracket": 4,
+        "tier": 15,
+        "kills_to_max": 1000,
+        "description": "The end is neigh.\n"
+      },
+      {
+        "title": "Phantom Fisher",
+        "bracket": 6,
+        "tier": 15,
+        "kills_to_max": 250,
+        "description": "Who is fishing who?\n"
+      },
+      {
+        "title": "Scarecrow",
+        "bracket": 3,
+        "tier": 15,
+        "kills_to_max": 4000,
+        "description": "Also found at a yellow brick road.\n"
+      },
+      {
+        "title": "Werewolf",
+        "bracket": 4,
+        "tier": 15,
+        "kills_to_max": 1000,
+        "description": "A very careful and aware wolf.\n"
+      }
+    ],
+    "Fishing Festival": [
+      {
+        "title": "Blue Shark",
+        "bracket": 4,
+        "tier": 15,
+        "kills_to_max": 1000,
+        "description": "Camouflages well with his environment.\n"
+      },
+      {
+        "title": "Great White Shark",
+        "bracket": 5,
+        "tier": 15,
+        "kills_to_max": 400,
+        "description": "Most famous of all sharks.\n"
+      },
+      {
+        "title": "Nurse Shark",
+        "bracket": 3,
+        "tier": 15,
+        "kills_to_max": 4000,
+        "description": "Still studying to become a doctor.\n"
+      },
+      {
+        "title": "Tiger Shark",
+        "bracket": 4,
+        "tier": 15,
+        "kills_to_max": 1000,
+        "description": "Like a regular tiger, but swims.\n"
+      }
+    ],
+    "Winter": [
+      {
+        "title": "Frosty",
+        "bracket": 3,
+        "tier": 15,
+        "kills_to_max": 4000,
+        "description": "Was a jolly happy soul.\n"
+      },
+      {
+        "title": "Frozen Steve",
+        "bracket": 3,
+        "tier": 15,
+        "kills_to_max": 4000,
+        "description": "\"Fell\" into Jerry's Pond.\n"
+      },
+      {
+        "title": "Grinch",
+        "bracket": 6,
+        "tier": 15,
+        "kills_to_max": 250,
+        "description": "How the Grinch Stole Jerry Season.\n"
+      },
+      {
+        "title": "Nutcracker",
+        "bracket": 5,
+        "tier": 15,
+        "kills_to_max": 400,
+        "description": "A toy brought to life.\n"
+      },
+      {
+        "title": "Reindrake",
+        "bracket": 7,
+        "tier": 15,
+        "kills_to_max": 100,
+        "description": "A Reindrake forms from the depths.\n"
+      },
+      {
+        "title": "Yeti",
+        "bracket": 6,
+        "tier": 15,
+        "kills_to_max": 250,
+        "description": "The cooler cousin of Bigfoot.\n"
+      }
+    ]
+  },
+  "Mythological Creatures": [
+    {
+      "title": "Stalwart Gaia Construct",
+      "bracket": 4,
+      "tier": 20,
+      "kills_to_max": 3000,
+      "description": "A construct truly connected to the Earth.\n"
+    },
+    {
+      "title": "Exalted Gaia Construct",
+      "bracket": 4,
+      "tier": 20,
+      "kills_to_max": 3000,
+      "description": "A construct truly connected to the Earth.\n"
+    },
+    {
+      "title": "Stalwart Minos Champion",
+      "bracket": 5,
+      "tier": 20,
+      "kills_to_max": 1000,
+      "description": "The champion of King Minos.\n"
+    },
+    {
+      "title": "Exalted Minos Champion",
+      "bracket": 5,
+      "tier": 20,
+      "kills_to_max": 1000,
+      "description": "The champion of King Minos.\n"
+    },
+    {
+      "title": "Minos Hunter",
+      "bracket": 5,
+      "tier": 20,
+      "kills_to_max": 1000,
+      "description": "The hunter becomes the hunted.\n"
+    },
+    {
+      "title": "Stalwart Minos Hunter",
+      "bracket": 5,
+      "tier": 20,
+      "kills_to_max": 1000,
+      "description": "The hunter becomes the hunted.\n"
+    },
+    {
+      "title": "Exalted Minos Hunter",
+      "bracket": 5,
+      "tier": 20,
+      "kills_to_max": 1000,
+      "description": "The hunter becomes the hunted.\n"
+    },
+    {
+      "title": "Exalted Minos Inquisitor",
+      "bracket": 7,
+      "tier": 20,
+      "kills_to_max": 500,
+      "description": "The ultimate guardian of Minos' Literature.\n"
+    },
+    {
+      "title": "Minotaur",
+      "bracket": 4,
+      "tier": 20,
+      "kills_to_max": 3000,
+      "description": "Buys his axes in bulk.\n"
+    },
+    {
+      "title": "Stalwart Minotaur",
+      "bracket": 4,
+      "tier": 20,
+      "kills_to_max": 3000,
+      "description": "Buys his axes in bulk.\n"
+    },
+    {
+      "title": "Exalted Minotaur",
+      "bracket": 4,
+      "tier": 20,
+      "kills_to_max": 3000,
+      "description": "Buys his axes in bulk.\n"
+    },
+    {
+      "title": "Siamese Lynx",
+      "bracket": 4,
+      "tier": 20,
+      "kills_to_max": 3000,
+      "description": "Not separated at birth.\n"
+    },
+    {
+      "title": "Stalwart Siamese Lynx",
+      "bracket": 4,
+      "tier": 20,
+      "kills_to_max": 3000,
+      "description": "Not separated at birth.\n"
+    },
+    {
+      "title": "Exalted Siamese Lynx",
+      "bracket": 4,
+      "tier": 20,
+      "kills_to_max": 3000,
+      "description": "Not separated at birth.\n"
+    }
+  ],
+  "Jerry": [
+    {
+      "title": "Blue Jerry",
+      "bracket": 5,
+      "tier": 10,
+      "kills_to_max": 30,
+      "description": "Jerry?\n"
+    },
+    {
+      "title": "Golden Jerry",
+      "bracket": 7,
+      "tier": 10,
+      "kills_to_max": 20,
+      "description": "Jerry?!\n"
+    },
+    {
+      "title": "Green Jerry",
+      "bracket": 4,
+      "tier": 10,
+      "kills_to_max": 75,
+      "description": "Jerry.\n"
+    },
+    {
+      "title": "Purple Jerry",
+      "bracket": 6,
+      "tier": 10,
+      "kills_to_max": 25,
+      "description": "Jerry!\n"
+    }
+  ],
+  "Kuudra": [
+    {
+      "title": "Blazing Golem",
+      "bracket": 3,
+      "tier": 10,
+      "kills_to_max": 300,
+      "description": "Trained by Lord Jawbus to serve Kuudra.\n"
+    },
+    {
+      "title": "Blight",
+      "bracket": 3,
+      "tier": 20,
+      "kills_to_max": 10000,
+      "description": "A blight upon the lands of SkyBlock.\n"
+    },
+    {
+      "title": "Dropship",
+      "bracket": 3,
+      "tier": 10,
+      "kills_to_max": 300,
+      "description": "Contrary to popular belief, does not actually drop ships.\n"
+    },
+    {
+      "title": "Explosive Imp",
+      "bracket": 4,
+      "tier": 20,
+      "kills_to_max": 3000,
+      "description": "Has an explosive temper.\n"
+    },
+    {
+      "title": "Inferno Magma Cube",
+      "bracket": 3,
+      "tier": 20,
+      "kills_to_max": 10000,
+      "description": "So hot, it has to be measured in Kelvin.\n"
+    },
+    {
+      "title": "Kuudra Berserker",
+      "bracket": 3,
+      "tier": 20,
+      "kills_to_max": 10000,
+      "description": "A single look at Kuudra drove him into a frenzy.\n"
+    },
+    {
+      "title": "Kuudra Follower",
+      "bracket": 2,
+      "tier": 20,
+      "kills_to_max": 25000,
+      "description": "Believes in the return of Kuudra.\n"
+    },
+    {
+      "title": "Kuudra Knocker",
+      "bracket": 3,
+      "tier": 20,
+      "kills_to_max": 10000,
+      "description": "He is the one who knocks.\n"
+    },
+    {
+      "title": "Kuudra Landmine",
+      "bracket": 3,
+      "tier": 20,
+      "kills_to_max": 10000,
+      "description": "Stepping on them seems to cause no harm!\n"
+    },
+    {
+      "title": "Kuudra Slasher",
+      "bracket": 5,
+      "tier": 10,
+      "kills_to_max": 30,
+      "description": "Hash-slinging.\n"
+    },
+    {
+      "title": "Magma Follower",
+      "bracket": 5,
+      "tier": 10,
+      "kills_to_max": 30,
+      "description": "Follows magma, wherever it flows.\n"
+    },
+    {
+      "title": "Wandering Blaze",
+      "bracket": 4,
+      "tier": 20,
+      "kills_to_max": 3000,
+      "description": "Lacks the legs to actually wander around, flies instead.\n"
+    },
+    {
+      "title": "Wither Sentry",
+      "bracket": 4,
+      "tier": 10,
+      "kills_to_max": 75,
+      "description": "Sentry down!\n"
+    }
+  ]
+}
