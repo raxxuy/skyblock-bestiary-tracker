@@ -1,5 +1,9 @@
 import { sql } from "drizzle-orm";
-import { AnySQLiteColumn, sqliteTable, text } from "drizzle-orm/sqlite-core";
+import {
+  type AnySQLiteColumn,
+  sqliteTable,
+  text,
+} from "drizzle-orm/sqlite-core";
 
 export const userTable = sqliteTable("users", {
   username: text("username").unique().notNull(),

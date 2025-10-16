@@ -30,7 +30,13 @@ export default function Home() {
               <h3>{user.username}</h3>
               <div>
                 <pre>
-                  <code>{JSON.stringify(profile.members[user.mojangId].bestiary.kills, null, 2)}</code>
+                  <code>
+                    {JSON.stringify(
+                      profile.members[user.mojangId].bestiary.kills,
+                      null,
+                      2,
+                    )}
+                  </code>
                 </pre>
               </div>
             </div>
