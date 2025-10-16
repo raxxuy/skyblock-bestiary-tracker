@@ -1,7 +1,8 @@
 import { createUser } from "@/drizzle/mutations";
 import { getUser } from "@/drizzle/queries";
-import { MojangRequest } from "@/types/request";
-import { SkyblockProfiles } from "@/types/skyblock";
+import { env } from "@/env";
+import type { MojangRequest } from "@/types/request";
+import type { SkyblockProfiles } from "@/types/skyblock";
 
 const getMojangProfile = async (username: string) => {
   const response = await fetch(
@@ -13,14 +14,14 @@ const getMojangProfile = async (username: string) => {
 
 const getSkyblockProfiles = async (uuid: string) => {
   const response = await fetch(
-    `https://api.hypixel.net/v2/skyblock/profiles?key=${process.env.HYPIXEL_API_KEY}&uuid=${uuid}`,
+    `https://api.hypixel.net/v2/skyblock/profiles?key=${env.HYPIXEL_API_KEY}&uuid=${uuid}`,
   );
   const data: SkyblockProfiles = await response.json();
   return data;
 };
 
 export async function GET(
-  request: Request,
+  _request: Request,
   ctx: RouteContext<"/api/users/[username]">,
 ) {
   const { username } = await ctx.params;
@@ -57,7 +58,7 @@ export async function GET(
 
   const selectedProfile = skyblockProfiles.profiles.find(
     (profile) => profile.selected,
-  )!;
+  );
 
   return new Response(JSON.stringify({ user, selectedProfile }), {
     status: 200,

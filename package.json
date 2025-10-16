@@ -10,11 +10,11 @@
     "format": "biome format --write"
   },
   "dependencies": {
-    "dotenv": "^17.2.3",
     "drizzle-orm": "^0.44.6",
     "next": "15.5.5",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "zod": "^4.1.12"
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.0",

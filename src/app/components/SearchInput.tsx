@@ -13,11 +13,12 @@ export default function SearchInput({ onSearch }: SearchInputProps) {
   };
 
   return (
-    <form onSubmit={handleSearch}>
+    <form onSubmit={handleSearch} className="border">
       <input
         type="text"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
+        className="p-2"
       />
     </form>
   );

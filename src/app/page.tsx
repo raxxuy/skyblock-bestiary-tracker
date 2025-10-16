@@ -1,7 +1,7 @@
 "use client";
 
-import { User } from "@/drizzle/schema";
-import { Profile } from "@/types/skyblock";
+import type { User } from "@/drizzle/schema";
+import type { Profile } from "@/types/skyblock";
 import { useState } from "react";
 import SearchInput from "./components/SearchInput";
 
@@ -17,24 +17,27 @@ export default function Home() {
   };
 
   return (
-    <div>
-      <SearchInput onSearch={onSearch} />
-      {profile && (
+    <div className="flex h-screen w-full items-center justify-center">
+      {!user ? (
         <div>
-          {user && (
-            <div>
-              <h2>{user.username}</h2>
-              <p>{user.mojangId}</p>
+          <SearchInput onSearch={onSearch} />
+        </div>
+      ) : (
+        <div className="flex h-screen w-full items-center justify-center">
+          {profile ? (
+            <div className="h-full w-full">
+              <h2>{profile.cute_name}</h2>
+              <div>
+                <pre>
+                  <code>{JSON.stringify(profile.members, null, 2)}</code>
+                </pre>
+              </div>
+            </div>
+          ) : (
+            <div className="h-full w-full">
+              <h2>No Profile Found</h2>
             </div>
           )}
-          <h2>{profile.cute_name}</h2>
-          <div>
-            {Object.entries(profile.members).map(([key, value]) => (
-              <div key={key}>
-                {JSON.stringify(value)}
-              </div>
-            ))}
-          </div>
         </div>
       )}
     </div>
