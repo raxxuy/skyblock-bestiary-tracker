@@ -2,6 +2,7 @@
 
 import type { User } from "@/drizzle/schema";
 import type { Profile } from "@/types/skyblock";
+import { getCurrentTier } from "@/utils/bestiary";
 import { useState } from "react";
 import SearchInput from "./components/SearchInput";
 
@@ -29,15 +30,12 @@ export default function Home() {
               <h2>{profile.cute_name}</h2>
               <h3>{user.username}</h3>
               <div>
-                <pre>
-                  <code>
-                    {JSON.stringify(
-                      profile.members[user.mojangId].bestiary.kills,
-                      null,
-                      2,
-                    )}
-                  </code>
-                </pre>
+                {Object.entries(profile.members[user.mojangId].bestiary.kills).map(([name, kills]) => (
+                  <div key={name}>
+                    <h4>{name}</h4>
+                    <p>Current tier: {getCurrentTier(name, kills)}</p>
+                  </div>
+                ))}
               </div>
             </div>
           ) : (
