@@ -1,8 +1,7 @@
 import { createUser } from "@/drizzle/mutations";
-import { getUser } from "@/drizzle/queries";
+import { getUserByUsername } from "@/drizzle/queries";
 import { env } from "@/env";
-import type { MojangRequest } from "@/types/request";
-import type { SkyblockProfiles } from "@/types/skyblock";
+import type { MojangRequest, SkyblockRequest } from "@/types/request";
 
 const getMojangProfile = async (username: string) => {
   const response = await fetch(
@@ -16,7 +15,7 @@ const getSkyblockProfiles = async (uuid: string) => {
   const response = await fetch(
     `https://api.hypixel.net/v2/skyblock/profiles?key=${env.HYPIXEL_API_KEY}&uuid=${uuid}`,
   );
-  const data: SkyblockProfiles = await response.json();
+  const data: SkyblockRequest = await response.json();
   return data;
 };
 
@@ -30,7 +29,7 @@ export async function GET(
     return new Response("Username is required", { status: 400 });
   }
 
-  let user = await getUser(username);
+  let user = await getUserByUsername(username);
 
   if (!user) {
     const mojangProfile = await getMojangProfile(username);
@@ -47,10 +46,7 @@ export async function GET(
 
   const skyblockProfiles = await getSkyblockProfiles(user.mojangId);
 
-  if (!skyblockProfiles.success) {
-    return new Response("Failed to fetch Skyblock profiles", { status: 500 });
-  }
-
+  // TODO: implement logic for bad statuses
   // TODO: implement logic for all profiles, not just the selected one
   // TODO: implement logic for situations where the user has done a name change, but their previous name is still in the database
 

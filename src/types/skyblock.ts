@@ -16,8 +16,3 @@ export type Profile = {
   selected: boolean;
   members: Record<string, Member>;
 };
-
-export type SkyblockProfiles = {
-  success: boolean;
-  profiles: Profile[];
-};
