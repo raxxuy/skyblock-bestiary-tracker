@@ -19,7 +19,9 @@ export const getCurrentTier = (name: string, kills: number): number => {
 
   const bestiaryEntry = (
     bestiary[entry.family as keyof typeof bestiary] as BestiaryEntry[]
-  ).find((b_entry) => b_entry.title === entry.name)!;
+  ).find((b_entry) => b_entry.title === entry.name);
+
+  if (!bestiaryEntry) return 0;
 
   const { bracket, tier } = bestiaryEntry;
 

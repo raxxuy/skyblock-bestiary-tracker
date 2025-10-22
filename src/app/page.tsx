@@ -2,49 +2,68 @@
 
 import type { User } from "@/drizzle/schema";
 import type { Profile } from "@/types/skyblock";
-import { getCurrentTier } from "@/utils/bestiary";
+import Image from "next/image";
 import { useState } from "react";
+import ProfileSection from "./_components/ProfileSection";
 import SearchInput from "./components/SearchInput";
 
 export default function Home() {
-  const [profile, setProfile] = useState<Profile | null>(null);
-  const [user, setUser] = useState<User | null>(null);
+  const [searchState, setSearchState] = useState<{
+    user: User | null;
+    profile: Profile | null;
+    loading: boolean;
+  }>({
+    user: null,
+    profile: null,
+    loading: false,
+  });
 
   const onSearch = async (query: string) => {
+    setSearchState((prev) => ({ ...prev, loading: true }));
     const response = await fetch(`/api/users/${query}`);
     const { user, selectedProfile } = await response.json();
-    setUser(user);
-    setProfile(selectedProfile);
+    setSearchState({
+      user,
+      profile: selectedProfile,
+      loading: false,
+    });
   };
 
   return (
-    <div className="flex h-screen w-full items-center justify-center">
-      {!user ? (
-        <div>
-          <SearchInput onSearch={onSearch} />
+    <div className="flex h-screen w-full flex-col">
+      <header className="grid w-full bg-zinc-800 px-4 py-4">
+        <div className="justify-self-end">
+          <a
+            href="https://github.com/raxxuy/skyblock-bestiary-tracker"
+            target="_blank"
+            rel="noopener"
+          >
+            <Image
+              src={"/github-mark-white.svg"}
+              width={24}
+              height={24}
+              alt="github"
+            />
+          </a>
         </div>
-      ) : (
-        <div className="flex h-screen w-full items-center justify-center">
-          {profile ? (
-            <div className="h-full w-full">
-              <h2>{profile.cute_name}</h2>
-              <h3>{user.username}</h3>
-              <div>
-                {Object.entries(profile.members[user.mojangId].bestiary.kills).map(([name, kills]) => (
-                  <div key={name}>
-                    <h4>{name}</h4>
-                    <p>Current tier: {getCurrentTier(name, kills)}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          ) : (
-            <div className="h-full w-full">
-              <h2>No Profile Found</h2>
-            </div>
-          )}
-        </div>
-      )}
+      </header>
+
+      <main className="grid h-screen w-full bg-zinc-900">
+        {searchState.loading ? (
+          <div className="self-center justify-self-center">Loading...</div>
+        ) : searchState.user && searchState.profile ? (
+          <div className="p-8">
+            <ProfileSection
+              user={searchState.user}
+              profile={searchState.profile}
+            />
+          </div>
+        ) : (
+          <div className="self-center justify-self-center">
+            <SearchInput onSearch={onSearch} />
+          </div>
+        )}
+      </main>
     </div>
   );
 }

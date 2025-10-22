@@ -1,4 +1,4 @@
-import { Profile } from "./skyblock";
+import type { Profile } from "./skyblock";
 
 export type MojangRequest = {
   id: string;
