@@ -7,27 +7,27 @@
     "family": "Private Island",
     "name": "Creeper"
   },
-  "^enderman_[1-15]$": {
+  "^enderman_([1-9]|1[0-5])$": {
     "family": "Private Island",
     "name": "Enderman"
   },
-  "^skeleton_[1-15]$": {
+  "^skeleton_([1-9]|1[0-5])$": {
     "family": "Private Island",
     "name": "Skeleton"
   },
-  "^slime_[1-15]$": {
+  "^slime_([1-9]|1[0-5])$": {
     "family": "Private Island",
     "name": "Slime"
   },
-  "^spider_[1-15]$": {
+  "^spider_([1-9]|1[0-5])$": {
     "family": "Private Island",
     "name": "Spider"
   },
-  "^witch_[1-15]$": {
+  "^witch_([1-9]|1[0-5])$": {
     "family": "Private Island",
     "name": "Witch"
   },
-  "^zombie_[1-15]$": {
+  "^zombie_([1-9]|1[0-5])$": {
     "family": "Private Island",
     "name": "Zombie"
   },
@@ -54,5 +54,29 @@
   "^zombie_villager_1$": {
     "family": "Hub",
     "name": "Zombie Villager"
+  },
+  "^farming_chicken_1$": {
+    "family": "The Farming Islands",
+    "name": "Chicken"
+  },
+  "^farming_cow_1$": {
+    "family": "The Farming Islands",
+    "name": "Cow"
+  },
+  "^mushroom_cow_1$": {
+    "family": "The Farming Islands",
+    "name": "Mushroom Cow"
+  },
+  "^farming_pig_1$": {
+    "family": "The Farming Islands",
+    "name": "Pig"
+  },
+  "^farming_rabbit_1$": {
+    "family": "The Farming Islands",
+    "name": "Rabbit"
+  },
+  "^farming_sheep_1$": {
+    "family": "The Farming Islands",
+    "name": "Sheep"
   }
 }

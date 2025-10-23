@@ -1,11 +1,11 @@
 "use client";
 
-import type { User } from "@/drizzle/schema";
-import type { Profile } from "@/types/skyblock";
 import Image from "next/image";
 import { useState } from "react";
+import SearchInput from "@/components/SearchInput";
+import type { User } from "@/drizzle/schema";
+import type { Profile } from "@/types/skyblock";
 import ProfileSection from "./_components/ProfileSection";
-import SearchInput from "./components/SearchInput";
 
 export default function Home() {
   const [searchState, setSearchState] = useState<{
@@ -30,7 +30,7 @@ export default function Home() {
   };
 
   return (
-    <div className="flex h-screen w-full flex-col">
+    <div className="flex min-h-screen w-full flex-col">
       <header className="grid w-full bg-zinc-800 px-4 py-4">
         <div className="justify-self-end">
           <a
@@ -48,7 +48,7 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="grid h-screen w-full bg-zinc-900">
+      <main className="grid w-full flex-1 bg-zinc-900">
         {searchState.loading ? (
           <div className="self-center justify-self-center">Loading...</div>
         ) : searchState.user && searchState.profile ? (

@@ -18,7 +18,7 @@ export default function SearchInput({ onSearch }: SearchInputProps) {
       onSubmit={handleSearch}
       className="flex items-center rounded-2xl bg-zinc-800 px-3 py-1 text-gray-400 shadow-lg"
     >
-      <Search className={`h-4 w-4 ${query ? "" : "text-gray-500"}`} />
+      <Search className={`h-4 w-4 ${!query && "text-gray-500"}`} />
       <input
         type="text"
         placeholder="Enter a username"

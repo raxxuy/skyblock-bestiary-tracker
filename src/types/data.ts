@@ -1,5 +1,3 @@
-export type Bestiary = Record<string, BestiaryEntry[]>;
-
 export type BestiaryEntry = {
   title: string;
   bracket: number;
@@ -8,9 +6,12 @@ export type BestiaryEntry = {
   description: string;
 };
 
-export type RegexEntries = Record<string, RegexEntry>;
-
-export type RegexEntry = {
-  family: string;
-  name: string;
-};
+export type FamilyMap = Record<
+  string,
+  (BestiaryEntry & {
+    kills: number;
+    family: string;
+    pattern: string;
+    currentTier: number;
+  })[]
+>;

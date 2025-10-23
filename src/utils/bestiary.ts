@@ -1,30 +1,63 @@
-import bestiary from "@/data/bestiary.json";
-import entries from "@/data/entries.json";
-import tiers from "@/data/tiers.json";
-import type { BestiaryEntry, RegexEntry } from "@/types/data";
+import bestiaryData from "@/data/bestiary.json";
+import entriesData from "@/data/entries.json";
+import tiersData from "@/data/tiers.json";
+import type { BestiaryEntry, FamilyMap } from "@/types/data";
+import type { Bestiary } from "@/types/skyblock";
 
-const getEntry = (name: string): RegexEntry | null => {
-  for (const [pattern, entry] of Object.entries(entries)) {
-    if (name.match(pattern)) {
-      return entry;
+const getCurrentTier = (entry: BestiaryEntry, kills: number): number => {
+  const { bracket, tier } = entry;
+  return Math.min(
+    tiersData.findIndex((t) => kills < t[bracket]),
+    tier,
+  );
+};
+
+// Maps the data from the API to a more usable format
+export const getBestiaryStats = (bestiary: Bestiary) => {
+  const regexMap = Object.fromEntries(
+    Object.entries(entriesData).map(([pattern, entry]) => [
+      pattern,
+      { entry, kills: 0 },
+    ]),
+  );
+
+  for (const [name, _kills] of Object.entries(bestiary.kills)) {
+    for (const [pattern, entry] of Object.entries(regexMap)) {
+      if (name.match(pattern)) {
+        regexMap[pattern] = { ...entry, kills: entry.kills + _kills };
+        break;
+      }
     }
   }
 
-  return null;
-};
+  return Object.entries(regexMap).reduce<FamilyMap>(
+    (familyMap, [pattern, { entry, kills }]) => {
+      const bestiaryEntry = (
+        bestiaryData[
+          entry.family as keyof typeof bestiaryData
+        ] as BestiaryEntry[]
+      ).find((b_entry) => b_entry.title === entry.name);
 
-export const getCurrentTier = (name: string, kills: number): number => {
-  const entry = getEntry(name);
-  if (!entry) return 0;
+      if (!bestiaryEntry) return familyMap;
 
-  const bestiaryEntry = (
-    bestiary[entry.family as keyof typeof bestiary] as BestiaryEntry[]
-  ).find((b_entry) => b_entry.title === entry.name);
+      const currentTier = getCurrentTier(bestiaryEntry, kills);
 
-  if (!bestiaryEntry) return 0;
+      const resultEntry = {
+        ...bestiaryEntry,
+        kills,
+        pattern,
+        currentTier,
+        family: entry.family,
+      };
 
-  const { bracket, tier } = bestiaryEntry;
+      if (!familyMap[entry.family]) {
+        familyMap[entry.family] = [];
+      }
 
-  const index = tiers.findIndex((t) => kills < t[bracket]);
-  return index >= 0 ? index : tier;
+      familyMap[entry.family].push(resultEntry);
+
+      return familyMap;
+    },
+    {},
+  );
 };
