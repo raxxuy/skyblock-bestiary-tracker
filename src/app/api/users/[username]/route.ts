@@ -44,17 +44,12 @@ export async function GET(
     });
   }
 
-  const skyblockProfiles = await getSkyblockProfiles(user.mojangId);
-
+  const { profiles } = await getSkyblockProfiles(user.mojangId);
+  
   // TODO: implement logic for bad statuses
-  // TODO: implement logic for all profiles, not just the selected one
   // TODO: implement logic for situations where the user has done a name change, but their previous name is still in the database
 
-  const selectedProfile = skyblockProfiles.profiles.find(
-    (profile) => profile.selected,
-  );
-
-  return new Response(JSON.stringify({ user, selectedProfile }), {
+  return new Response(JSON.stringify({ user, profiles }), {
     status: 200,
   });
 }

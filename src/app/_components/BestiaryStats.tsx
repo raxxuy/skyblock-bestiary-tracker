@@ -7,8 +7,9 @@ interface BestiaryStatsProps {
 }
 
 export default function BestiaryStats({ bestiary }: BestiaryStatsProps) {
+  if (!bestiary || !bestiary.kills) return null;
+  
   const stats = getBestiaryStats(bestiary);
-  console.log(bestiary);
 
   return (
     <div className="flex flex-col gap-4">

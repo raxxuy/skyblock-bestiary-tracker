@@ -8,4 +8,5 @@ export type MojangRequest = {
 export type SkyblockRequest = {
   success: boolean;
   profiles: Profile[];
+  cause?: string;
 };

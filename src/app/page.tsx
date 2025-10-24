@@ -5,26 +5,26 @@ import { useState } from "react";
 import SearchInput from "@/components/SearchInput";
 import type { User } from "@/drizzle/schema";
 import type { Profile } from "@/types/skyblock";
-import ProfileSection from "./_components/ProfileSection";
+import ProfilesSection from "./_components/ProfilesSection";
 
 export default function Home() {
   const [searchState, setSearchState] = useState<{
     user: User | null;
-    profile: Profile | null;
+    profiles: Profile[] | null;
     loading: boolean;
   }>({
     user: null,
-    profile: null,
+    profiles: null,
     loading: false,
   });
 
   const onSearch = async (query: string) => {
     setSearchState((prev) => ({ ...prev, loading: true }));
     const response = await fetch(`/api/users/${query}`);
-    const { user, selectedProfile } = await response.json();
+    const { user, profiles } = await response.json();
     setSearchState({
       user,
-      profile: selectedProfile,
+      profiles,
       loading: false,
     });
   };
@@ -51,11 +51,11 @@ export default function Home() {
       <main className="grid w-full flex-1 bg-zinc-900">
         {searchState.loading ? (
           <div className="self-center justify-self-center">Loading...</div>
-        ) : searchState.user && searchState.profile ? (
+        ) : searchState.user && searchState.profiles ? (
           <div className="p-8">
-            <ProfileSection
+            <ProfilesSection
               user={searchState.user}
-              profile={searchState.profile}
+              profiles={searchState.profiles}
             />
           </div>
         ) : (

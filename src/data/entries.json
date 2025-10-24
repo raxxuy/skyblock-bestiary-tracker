@@ -78,5 +78,97 @@
   "^farming_sheep_1$": {
     "family": "The Farming Islands",
     "name": "Sheep"
+  },
+  "^pest_cricket_1$": {
+    "family": "Garden",
+    "name": "Cricket"
+  },
+  "^pest_beetle_1$": {
+    "family": "Garden",
+    "name": "Beetle"
+  },
+  "^pest_mouse_1$": {
+    "family": "Garden",
+    "name": "Field Mouse"
+  },
+  "^pest_worm_1$": {
+    "family": "Garden",
+    "name": "Earthworm"
+  },
+  "^pest_fly_1$": {
+    "family": "Garden",
+    "name": "Fly"
+  },
+  "^pest_locust_1$": {
+    "family": "Garden",
+    "name": "Locust"
+  },
+  "^pest_mite_1$": {
+    "family": "Garden",
+    "name": "Mite"
+  },
+  "^pest_mosquito_1$": {
+    "family": "Garden",
+    "name": "Mosquito"
+  },
+  "^pest_moth_1$": {
+    "family": "Garden",
+    "name": "Moth"
+  },
+  "^pest_rat_1$": {
+    "family": "Garden",
+    "name": "Rat"
+  },
+  "^pest_slug_1$": {
+    "family": "Garden",
+    "name": "Slug"
+  },
+  "^arachne_(300|500)$": {
+    "family": "Spider's Den",
+    "name": "Arachne"
+  },
+  "^arachne_brood_(100|200)$": {
+    "family": "Spider's Den",
+    "name": "Arachne's Brood"
+  },
+  "^arachne_keeper_100$": {
+    "family": "Spider's Den",
+    "name": "Arachne's Keeper"
+  },
+  "^brood_mother_spider_12$": {
+    "family": "Spider's Den",
+    "name": "Broodmother"
+  },
+  "^dasher_spider_(4|42|45|50)$": {
+    "family": "Spider's Den",
+    "name": "Dasher Spider"
+  },
+  "^respawning_skeleton_2$": {
+    "family": "Spider's Den",
+    "name": "Gravel Skeleton"
+  },
+  "^random_slime_(8|20)$": {
+    "family": "Spider's Den",
+    "name": "Rain Slime"
+  },
+  "^(splitter_spider|jockey_shot)_silverfish_(2|3|42|45|50)$": {
+    "family": "Spider's Den",
+    "name": "Silverfish"
+  },
+  "^spider_jockey_(3|42)$": {
+    "family": "Spider's Den",
+    "name": "Spider Jockey"
+  },
+  "^splitter_spider_(2|42|45|50)$": {
+    "family": "Spider's Den",
+    "name": "Splitter Spider"
+  },
+  "^voracious_spider_(10|42|45|50)$": {
+    "family": "Spider's Den",
+    "name": "Voracious Spider"
+  },
+  "^weaver_spider_(3|42|45|50)$": {
+    "family": "Spider's Den",
+    "name": "Weaver Spider"
   }
 }
